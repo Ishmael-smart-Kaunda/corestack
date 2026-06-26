@@ -1,10 +1,98 @@
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import logo from "../assets/logo/logo.png"
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 import { MdMenu } from "react-icons/md";
 import { HiChevronDown } from "react-icons/hi2";
+import { useState, useReducer, useEffect } from "react";
+
+
+const pricesData =[
+       {
+          id:1,
+          service: 'Business process automation',
+          selectedCurrency: "MWK",
+          price:300000,
+       },
+        {
+          id:2,
+          service: 'Web platforms & digitalpresence',
+          selectedCurrency: "MWK",
+          price:400000,
+       },
+        {
+          id:3,
+          service: 'e-Commerce platforms',
+          selectedCurrency: "MWK",
+          price:450000,
+        },
+        {
+          id:4,
+          service: 'System maintainance & support',
+          selectedCurrency: "MWK",
+          price:420000,
+       },
+       {
+          id:5,
+          service: 'Search optimization & online visibility',
+          selectedCurrency: "MWK",
+          price:15000,
+       },
+   ]
+   const api = 'https://api.frankfurter.dev/v2/rates?quotes=USD,MWK'
+   const exchangeRate=7500
+
 const Navbar = () => { 
-    return (
+    
+
+   const [currencies, setCurrencies] = useState({
+                                       id:'',
+                                       currency:''
+                                    })
+   const [rates, setRates] = useState({});
+   useEffect(()=>{
+        const getRates = async () =>{
+            const response = await fetch('https://api.frankfurter.dev/v2/rates?quotes=USD,MWK');
+            const data = await response.json();
+            const formattedRates = {};
+            data.forEach((rate)=>{
+                 formattedRates[rate.quote]=rate.rate
+               })
+            
+            setRates(formattedRates);
+            
+        }
+        getRates()
+   },[]);
+
+   //  RATE
+   const usdRate =
+    rates.MWK && rates.USD
+    ? rates.MWK / rates.USD
+    : null;
+
+  const handleCurrency = (e, item) =>{
+         setCurrencies({
+               ...currencies,
+               id:item.id,
+               currency:e.target.value
+             }
+         )
+         console.log('CURRENCIES', currencies)
+  }
+      // TOGGLE MENU BAR
+   const [openMenu, setOpenMenu] = useState(false);
+   const toggleMenu = () =>{
+            setOpenMenu(!openMenu) 
+         }
+
+   const [viewPrice, setViewPrice] = useState(false);
+   const togglePriceView = () =>{
+         setViewPrice(!viewPrice)    
+        }
+
+
+
+   return (
           <header 
              className="
                 w-full 
@@ -14,28 +102,29 @@ const Navbar = () => {
                 md:gap-15
                 justify-between
                   
-                md:items-end
-                bg-black/90 
-                text-white 
-                px-5 py-6"
+                items-end
+                bg-white/90 
+                px-5 
+                py-6
+                max-h-23
+                box-border
+                "
                >
+                  {/**LOGO */}
                <Link 
                 className="
-                  font-bold 
-                  text-2xl 
-                  text-white
-                  border 
-                  border-white/20
+                  flex items-center
                   rounded-lg
+                  h-14 w-50 p-5 
+                  translate-y-3
+               
                "
                   >
                   <img 
                     src={logo} 
                     alt="Logo" 
-                    className="
-                      invisible 
-                      h-10 
-                      translate-y-2" 
+                    className=" h-20 scale-125
+                     object-cover" 
                   />
                </Link>
                <nav className="
@@ -51,31 +140,31 @@ const Navbar = () => {
                   gap-15 
                   "
                   >
-                 <Link 
+                  <Link 
                     to="/"
                     className="">
                         Home
-                 </Link>
-                 <Link 
-                    to="/solutions"
+                  </Link>
+                  <Link 
+                    to="/services"
                     className="">
-                        Our solutions
-                 </Link>
-                 <Link 
-                    to="/industries"
-                    className="">
-                        Industries we serve
-                 </Link>
-                 <Link 
+                        Our services
+                  </Link>
+                  <Link 
                     to="/contact"
                     className="">
-                         Our strategies
+                         Our approach
                   </Link>
-                 <Link 
+                  <Link 
+                    to="/industries"
+                    className="">
+                        current solutions
+                  </Link>
+                  <Link 
                     to="/about"
                     className="">
                         About us
-                 </Link>
+                  </Link>
               </ul>
                {/*user guide */}
               <div 
@@ -92,32 +181,69 @@ const Navbar = () => {
                     items-center
                     gap-2
                     group
-                    px-8 
-                    py 
+                    px-6 
                     border 
-                    border-white/20 
+                    border-black/20 
                     rounded-full"
                    >   
-                   Our pricing
-                   <HiChevronDown className="size-4 mx-auto text-white/40"/>
+                   Pricing overview
+                   <HiChevronDown className="size-4 mx-auto text-black/40"/>
                      <div className="
                            absolute 
-                           bg-black
+                           bg-white/80
                            opacity-0
                             top-0
                            -left-[50%]
                            translate-x-[25%]
-                           w-full 
-                           h-70 
+                           w-fit 
+                           h-70
+                           p-2 
                            rounded-md 
                            invisible 
                            group-hover:visible 
                            group-hover:translate-y-12
                            group-hover:opacity-100
                            transition-all duration-500
-                           border"
+                           border border-black/20"
                      >
-                        
+                      <table className="w-full h-full">
+                        <thead>
+                         <tr className="w-full py-2 text-left border-b border-black/20">
+                           <th className="">Services</th>
+                           <th className="pr-2">Currency</th>
+                           <th className="">Pricing</th>
+                         </tr>
+                        </thead>
+
+                        <tbody className="">
+                        { pricesData.map((item)=>
+                              <tr key={item.id} className="w-full py-2">
+                                 <td className="">{item.service}</td>
+                                 <td className="text-black/40 text-[12px] font-semibold">
+                                      <select name="" id="" 
+                                           className="border 
+                                                  border-black/20 
+                                                  rounded-md
+                                                  uppercase
+                                                "
+                                       >   
+                                          <option value='MWK' className="uppercase">MWK</option> 
+                                          <option value='USD' className="uppercase">USD</option>         
+                                       </select>
+                                 </td>
+                                 <td 
+                                    className=""
+                                 >
+                                      {true
+                                        ? (item.price).toLocaleString()
+                                        : (item.price / exchangeRate).toFixed(2)
+                                      }
+                                 </td>
+                              </tr>
+                            )
+                        }
+                        </tbody>
+                      </table>  
                      </div>
                 </Link>
                 <Link to='/'
@@ -127,18 +253,217 @@ const Navbar = () => {
                      px-8 
                      py-2 
                      rounded-full 
-                     bg-blue-900"
+                     bg-blue-900
+                     text-white"
                    >   
                    Lets talk
                 </Link>
              </div>
             </nav>
+
             {/*menu button */}
-            <button onClick={(e)=>console.log('clicked', e)}
-              className="md:hidden p-3 border rounded-md"
+            <button onClick={toggleMenu}
+              className="md:hidden z-50 rounded-md"
               >
-               <MdMenu className="size-10"/>
+               <MdMenu className="size-8"/>
             </button>
+
+
+             {/*MOBILE MENU */}
+             <nav className={`
+                  fixed
+                  top-0  
+                  left-0
+                  ${
+                     openMenu ?
+                     'translate-x-[0] translate-y-[0] opacity-100' 
+                     :
+                     'translate-x-[100%] translate-y-[-100%] opacity-0'
+                  }
+                  transition-all duration-500
+                  z-50
+                  flex
+                  flex-col 
+                  justify-between
+
+                  gap-[3rem]
+                  md:hidden 
+                  w-full 
+                  h-full 
+                  bg-white/95
+                  pb-10 pt-5
+                  px-2
+                  `}
+               >
+                <div className="relative w-full px-5">
+                   <button onClick={toggleMenu} 
+                     className="absolute right-3 p-2 rounded-full bg-gray-200/20">
+                     <HiX className="size-7 text-black/30 shrink-0"/>
+                   </button>
+                </div>
+                <ul className="
+                  flex 
+                  flex-col
+                  items-center 
+                  text-[1.3em] 
+                  font-semibold 
+                  gap-15 
+                  z-100
+                  "
+                  >
+                 <NavLink 
+                    
+                    to="/"
+                    onClick={toggleMenu}
+                    className=""
+                    >
+                        Home
+                 </NavLink>
+                 <NavLink 
+                    to="/solutions"
+                    onClick={toggleMenu}
+                    className="">
+                        Our services
+                 </NavLink>
+                 <NavLink 
+                    to="/contact"
+                    onClick={toggleMenu}
+                    className="">
+                         Our approach
+                  </NavLink>
+                  <NavLink 
+                    to="/about"
+                    onClick={toggleMenu}
+                    className="">
+                        current solutions
+                 </NavLink>
+                 <NavLink 
+                    to="/about"
+                    onClick={toggleMenu}
+                    className="">
+                        About us
+                 </NavLink>
+              </ul>
+               {/*user guide */}
+              <div 
+                  className="
+                    flex 
+                    justify-between 
+                    
+                    font-light
+                    border-t
+                    border-black/20
+                    pt-[4rem] 
+                    "
+               >
+                {/*PRICE OVERVIEW BUTTON */}
+                <button onClick={togglePriceView}
+                    className="
+                    flex
+                    items-center
+                    gap-2
+                    group
+                    px-8 
+                    py 
+                    border 
+                    border-black/20 
+                    rounded-full"
+                   >   
+                   Pricing overview
+                   <HiChevronDown className="size-4 mx-auto text-black/40 -rotate-90"/>
+                </button>
+
+                <Link to='/'
+                    className="
+                     flex
+                     items-center
+                     px-8 
+                     py-2 
+                     rounded-full 
+                     bg-blue-900
+                     text-white"
+                   >   
+                   Lets talk
+                </Link>
+             </div>
+            </nav>
+            {/** PRICING GUIDE FOR MOBILE */}
+
+            <div className={`
+                           fixed
+                           left-0
+                           top-0
+                           md:hidden
+                           flex
+                           flex-col
+                           justify-center
+                           overflow-auto
+                           z-200
+                           ${
+                              viewPrice ?
+                              'translate-x-0 opacity-100'
+                              :
+                              'translate-x-full opacity-0'
+                           } 
+                           
+                           w-full 
+                           h-full
+                           p-5 
+                           bg-white 0 drop-blur-sm
+                           transition-all duration-500
+                           `}
+                  >
+                  {/*CLOSE PRICE OVERVIEW */}
+
+                   <button onClick={togglePriceView} 
+                     className="self-end p-2 rounded-full bg-gray-200/20 my-2">
+                     <HiX className="size-7 text-black/30 shrink-0"/>
+                   </button>
+                  <div className="w-full h-8/10 bg-white border rounded-md p-2">
+                      <table className="w-full h-full">
+                        <thead className="">
+                         <tr className="w-full py-2 text-left border-b border-black/20">
+                           <th className="">Services</th>
+                           <th className="pr-2">Currency</th>
+                           <th className="">Pricing</th>
+                         </tr>
+                        </thead>
+
+                        <tbody className="">
+                          { pricesData.map((item)=>
+                              <tr key={item.id} className="w-full py-2">
+                                 <td className="">{item.service}</td>
+                                 <td className="text-black/40 text-[12px] font-semibold">
+                                      <select name="" 
+                                           value={currencies.currency} 
+                                           id={item.id} 
+                                           onChange={(e)=>handleCurrency(e, item)} 
+                                           className="border 
+                                                  border-black/20 
+                                                  rounded-md
+                                                  uppercase
+                                                "
+                                       >   
+                                         <option value='MWK' className="uppercase">MWK</option> 
+                                         <option value='USD' className="uppercase">USD</option>      
+                                       </select>
+                                 </td>
+                                 <td className="whitespace-nowrap">
+                                     { currencies.currency === "MWK"
+                                          ? `MK ${item.price.toLocaleString()}`
+                                          : usdRate
+                                             ? `$ ${(item.price / usdRate).toFixed(2)}`
+                                             : "Loading..."
+                                      }
+                                 </td>
+                              </tr>
+                            )
+                        }
+                        </tbody>
+                     </table> 
+                  </div> 
+              </div>
+            
           </header>
     )
 }  
