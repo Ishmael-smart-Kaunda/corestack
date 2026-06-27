@@ -103,11 +103,12 @@ const Navbar = () => {
                 justify-between
                   
                 items-end
-                bg-white/90 
+                bg-white/99 
                 px-5 
                 py-6
                 max-h-23
                 box-border
+                z-50
                 "
                >
                   {/**LOGO */}
@@ -194,9 +195,9 @@ const Navbar = () => {
                            opacity-0
                             top-0
                            -left-[50%]
-                           translate-x-[25%]
-                           w-fit 
-                           h-70
+                           translate-x-[20%]
+                           w-[420px] 
+                           h-80
                            p-2 
                            rounded-md 
                            invisible 
@@ -208,7 +209,7 @@ const Navbar = () => {
                      >
                       <table className="w-full h-full">
                         <thead>
-                         <tr className="w-full py-2 text-left border-b border-black/20">
+                         <tr className="w-full py-5 text-left">
                            <th className="">Services</th>
                            <th className="pr-2">Currency</th>
                            <th className="">Pricing</th>
@@ -220,7 +221,9 @@ const Navbar = () => {
                               <tr key={item.id} className="w-full py-2">
                                  <td className="">{item.service}</td>
                                  <td className="text-black/40 text-[12px] font-semibold">
-                                      <select name="" id="" 
+                                      <select  
+                                           value={currencies.currency}
+                                           onChange={(e)=>handleCurrency(e, item)} 
                                            className="border 
                                                   border-black/20 
                                                   rounded-md
@@ -232,11 +235,13 @@ const Navbar = () => {
                                        </select>
                                  </td>
                                  <td 
-                                    className=""
+                                    className="whitespace-nowrap"
                                  >
-                                      {true
-                                        ? (item.price).toLocaleString()
-                                        : (item.price / exchangeRate).toFixed(2)
+                                      { currencies.currency === "MWK"
+                                          ? `MK ${item.price.toLocaleString()}`
+                                          : usdRate
+                                             ? `$ ${(item.price / usdRate).toFixed(2)}`
+                                             : "Loading..."
                                       }
                                  </td>
                               </tr>
@@ -253,7 +258,7 @@ const Navbar = () => {
                      px-8 
                      py-2 
                      rounded-full 
-                     bg-blue-900
+                     bg-[#0066FF]
                      text-white"
                    >   
                    Lets talk
@@ -436,7 +441,7 @@ const Navbar = () => {
                                  <td className="text-black/40 text-[12px] font-semibold">
                                       <select name="" 
                                            value={currencies.currency} 
-                                           id={item.id} 
+                                           id='' 
                                            onChange={(e)=>handleCurrency(e, item)} 
                                            className="border 
                                                   border-black/20 
