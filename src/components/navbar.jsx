@@ -293,82 +293,8 @@ const Navbar = () => {
                 </Link>
              </div>
             </nav>
-            {/** PRICING GUIDE FOR MOBILE */}
-
-            <div className={`
-                           fixed
-                           left-0
-                           top-0
-                           md:hidden
-                           flex
-                           flex-col
-                           justify-center
-                           overflow-auto
-                           z-200
-                           ${
-                              viewPrice ?
-                              'translate-x-0 opacity-100'
-                              :
-                              'translate-x-full opacity-0'
-                           } 
-                           
-                           w-full 
-                           h-full
-                           p-5 
-                           bg-white 0 drop-blur-sm
-                           transition-all duration-500
-                           `}
-                  >
-                  {/*CLOSE PRICE OVERVIEW */}
-
-                   <button onClick={togglePriceView} 
-                     className="self-end p-2 rounded-full bg-gray-200/20 my-2">
-                     <HiX className="size-7 text-black/30 shrink-0"/>
-                   </button>
-                  <div className="w-full h-8/10 bg-white border rounded-md p-2">
-                      <table className="w-full h-full">
-                        <thead className="">
-                         <tr className="w-full py-2 text-left border-b border-black/20">
-                           <th className="">Services</th>
-                           <th className="pr-2">Currency</th>
-                           <th className="">Pricing</th>
-                         </tr>
-                        </thead>
-
-                        <tbody className="">
-                          { pricesData.map((item)=>
-                              <tr key={item.id} className="w-full py-2">
-                                 <td className="">{item.service}</td>
-                                 <td className="text-black/40 text-[12px] font-semibold">
-                                      <select name="" 
-                                           value={currencies.currency} 
-                                           id='' 
-                                           onChange={(e)=>handleCurrency(e, item)} 
-                                           className="border 
-                                                  border-black/20 
-                                                  rounded-md
-                                                  uppercase
-                                                "
-                                       >   
-                                         <option value='MWK' className="uppercase">MWK</option> 
-                                         <option value='USD' className="uppercase">USD</option>      
-                                       </select>
-                                 </td>
-                                 <td className="whitespace-nowrap">
-                                     { currencies.currency === "MWK"
-                                          ? `MK ${item.price.toLocaleString()}`
-                                          : usdRate
-                                             ? `$ ${(item.price / usdRate).toFixed(2)}`
-                                             : "Loading..."
-                                      }
-                                 </td>
-                              </tr>
-                            )
-                        }
-                        </tbody>
-                     </table> 
-                  </div> 
-              </div>
+           
+             
             
           </header>
     )
