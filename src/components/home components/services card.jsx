@@ -1,5 +1,5 @@
 import { HiArrowRight } from "react-icons/hi";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -19,32 +19,32 @@ const ServicesCard = ({id, icon, title, description, deliverables, businessImpac
                       duration-1000"
                   >
                   <header>
-                    <div class="w-fit p-2 bg-[#0066FF]/5 rounded-full my-4">
-                       <Icon className="size-7 text-[#0066FF] white"/>
+                    <div class="w-fit sm:p-2 p-3  bg-black/2 border border-black/4 rounded-full my-4">
+                       <Icon className="size-7 text-black/80"/>
                     </div>
-                    <h3 className="text-[1.4rem] font-bold">{title}</h3>
+                    <h3 className="text-xl  font-bold">{title}</h3>
                   </header>
-                  <p className="text-[18px] font-semibold text-black/70">
+                  <p className="text-lg  text-bla ck/80">
                       {description}
                   </p>
-                  <p className="text-[18px] text-sky-700 [#0066FF] font-semibold">
+                  <p className="hidden text-xl font-semibold">
                       Deliverable solutions
                   </p>
-                  <ul className="px-5 space-y-1 ">
+                  <ul className="hidden px-5 space-y-1 ">
                      {deliverables.map((deliverable)=>
                             <li key={deliverable}
-                               className="text-[14px] font-semibold list-disc"
+                               className="text-sm md:text-base font-semibold list-disc"
                               >
                               {deliverable}
                             </li>
                        )}
                   </ul>
-                  <footer className="w-full flex gap-10 items-center">
-                    <a href="/services/business-process-automation"
+                  <footer className="w-full flex flex-col gap-2 items-start font-bold text-blue-700">
+                    <Link href="/services/business-process-automation"
                        className="font-semibold">
-                       Explore Solution
-                    </a>
-                    <HiArrowRight className="md:opacity-0 group-hover:opacity-100 group-hover:translate-x-[200%] size-4 transition-all duration-1000"/>
+                       Explore
+                    </Link>
+                    <HiArrowRight className="md: opacity-0 group-hover: opacity-100 group-hover:translate-x-[200%] size-4 transition-all duration-1000"/>
                   </footer>
               </article>
        )

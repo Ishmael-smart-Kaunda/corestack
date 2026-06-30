@@ -96,25 +96,23 @@ const Navbar = () => {
           <header 
              className="
                 w-full 
-                fixed
+                f
                 top-0
                 flex 
-                md:gap-15
                 justify-between
-                  
                 items-end
-                bg-white/99 
+                bg-white
+                shadow-sm
                 px-5 
                 py-6
                 max-h-23
-                box-border
                 z-50
                 "
                >
                   {/**LOGO */}
                <Link 
                 className="
-                  flex items-center
+                  flex items-center border
                   rounded-lg
                   h-14 w-50 p-5 
                   translate-y-3
@@ -124,148 +122,51 @@ const Navbar = () => {
                   <img 
                     src={logo} 
                     alt="Logo" 
-                    className=" h-20 scale-125
+                    className="hidden h-20 scale-125
                      object-cover" 
                   />
                </Link>
                <nav className="
-                  hidden md:flex w-full 
-                  justify-between 
-                  "
+                      hidden 
+                      md:flex 
+                      w-full
+                     "
                   >
-              <ul className="
-                  flex 
-               flex-col md:flex-row 
-                  self-end text-[0.9em] 
-                  font-semibold 
-                  gap-15 
-                  "
-                  >
-                  <Link 
-                    to="/"
-                    className="">
-                        Home
-                  </Link>
-                  <Link 
-                    to="/services"
-                    className="">
-                        Our services
-                  </Link>
-                  <Link 
-                    to="/contact"
-                    className="">
-                         Our approach
-                  </Link>
-                  <Link 
-                    to="/industries"
-                    className="">
-                        current solutions
-                  </Link>
-                  <Link 
-                    to="/about"
-                    className="">
-                        About us
-                  </Link>
-              </ul>
-               {/*user guide */}
-              <div 
-               className="
-                    relative
-                    mr-5 
-                    flex 
-                    self-start 
-                    gap-10 
-                    font-light">
-                <Link to='/'
-                    className="
-                    flex
-                    items-center
-                    gap-2
-                    group
-                    px-6 
-                    border 
-                    border-black/20 
-                    rounded-full"
-                   >   
-                   Pricing overview
-                   <HiChevronDown className="size-4 mx-auto text-black/40"/>
-                     <div className="
-                           absolute 
-                           bg-white/80
-                           opacity-0
-                            top-0
-                           -left-[50%]
-                           translate-x-[20%]
-                           w-[420px] 
-                           h-80
-                           p-2 
-                           rounded-md 
-                           invisible 
-                           group-hover:visible 
-                           group-hover:translate-y-12
-                           group-hover:opacity-100
-                           transition-all duration-500
-                           border border-black/20"
+               <ul className="
+                     flex 
+                     gap-15 
+                     "
                      >
-                      <table className="w-full h-full">
-                        <thead>
-                         <tr className="w-full py-5 text-left">
-                           <th className="">Services</th>
-                           <th className="pr-2">Currency</th>
-                           <th className="">Pricing</th>
-                         </tr>
-                        </thead>
-
-                        <tbody className="">
-                        { pricesData.map((item)=>
-                              <tr key={item.id} className="w-full py-2">
-                                 <td className="">{item.service}</td>
-                                 <td className="text-black/40 text-[12px] font-semibold">
-                                      <select  
-                                           value={currencies.currency}
-                                           onChange={(e)=>handleCurrency(e, item)} 
-                                           className="border 
-                                                  border-black/20 
-                                                  rounded-md
-                                                  uppercase
-                                                "
-                                       >   
-                                          <option value='MWK' className="uppercase">MWK</option> 
-                                          <option value='USD' className="uppercase">USD</option>         
-                                       </select>
-                                 </td>
-                                 <td 
-                                    className="whitespace-nowrap"
-                                 >
-                                      { currencies.currency === "MWK"
-                                          ? `MK ${item.price.toLocaleString()}`
-                                          : usdRate
-                                             ? `$ ${(item.price / usdRate).toFixed(2)}`
-                                             : "Loading..."
-                                      }
-                                 </td>
-                              </tr>
-                            )
-                        }
-                        </tbody>
-                      </table>  
-                     </div>
-                </Link>
-                <Link to='/'
-                    className="
-                     flex
-                     items-center
-                     px-8 
-                     py-2 
-                     rounded-full 
-                     bg-[#0066FF]
-                     text-white"
-                   >   
-                   Lets talk
-                </Link>
-             </div>
+                     <Link 
+                     to="/"
+                     className="">
+                           Home
+                     </Link>
+                     <Link 
+                     to="/services"
+                     className="">
+                           Our services
+                     </Link>
+                     <Link 
+                     to="/contact"
+                     className="">
+                           Our approach
+                     </Link>
+                     <Link 
+                     to="/industries"
+                     className="">
+                           current solutions
+                     </Link>
+                     <Link 
+                     to="/about"
+                     className="">
+                           About us
+                     </Link>
+               </ul>
+               {/*user guide */}
+             
             </nav>
-
+ 
             {/*menu button */}
             <button onClick={toggleMenu}
               className="md:hidden z-50 rounded-md"

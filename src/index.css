@@ -1,1 +1,33 @@
+@theme{
+
+    --animate-marquee: marquee 10s linear infinite;
+
+    @keyframes marquee {
+            from {
+            transform: translateY(0);
+            }
+
+            to {
+            transform: translateY(-50%);
+            }
+      }
+      --animate-marqueeMobile: marqueeMobile 10s linear infinite;
+
+    @keyframes marqueeMobile {
+            from {
+            transform: translateX(0);
+            }
+
+            to {
+            transform: translateX(-50%);
+            }
+      }
+}
+
+
 @import "tailwindcss"
+      
+
+
+
+
