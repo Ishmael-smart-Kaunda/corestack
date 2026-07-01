@@ -7,20 +7,25 @@ const ServicesCard = ({id, icon, title, description, deliverables, businessImpac
         const Icon =icon
         return(
               <article className="
+                      relative
                       group
                       w-full 
-                      shadow-sm bg-white 
+                      min-h-90
+                      shadow-sm 
+                      shadow-[#03045e]/10 
+                      border 
+                      border-[#03045e]/15
+                      bg-white 
                       p-6 
                       rounded-md 
-                      space-y-5 
-                      hover:bg-blue-500/5
-                      hover:scale -101 
+                      space-y-4 
+                      hover:scale-101 
                       transition-all 
                       duration-1000"
                   >
                   <header>
                     <div class="w-fit sm:p-2 p-3  bg-black/2 border border-black/4 rounded-full my-4">
-                       <Icon className="size-7 text-black/80"/>
+                       <Icon className="size-7 text-blue-900/80"/>
                     </div>
                     <h3 className="text-xl  font-bold">{title}</h3>
                   </header>
@@ -39,12 +44,20 @@ const ServicesCard = ({id, icon, title, description, deliverables, businessImpac
                             </li>
                        )}
                   </ul>
-                  <footer className="w-full flex flex-col gap-2 items-start font-bold text-blue-700">
+                  <footer className="absolute bottom-0 pb-6  w-fit flex flex-col gap-2 items-start font-bold text-blue-700">
                     <Link href="/services/business-process-automation"
-                       className="font-semibold">
-                       Explore
+                       className="
+                          font-semibold 
+                          md:opacity-0 
+                          md:group-hover:opacity-100 
+                          transition-all 
+                          duration-1000 
+                          flex 
+                          items-center 
+                          gap-2">
+                       Explore more
+                       <HiArrowRight className="size-4 "/>
                     </Link>
-                    <HiArrowRight className="md: opacity-0 group-hover: opacity-100 group-hover:translate-x-[200%] size-4 transition-all duration-1000"/>
                   </footer>
               </article>
        )

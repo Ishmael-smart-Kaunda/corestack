@@ -20,12 +20,13 @@ const Footer = ()=> {
             w-full 
             flex 
             flex-col
-            lg:flex-row
+            md:flex-row
             items-start
             md:items-center
             md:justify-between 
-            gap-6 bg-black 
-            text-white/80 
+            gap-6 
+            bg-gray-200/80 
+            
             rounded-xl 
             mb-8
             py-6
@@ -38,29 +39,29 @@ const Footer = ()=> {
                    className="size-12 mr-3 border rounded-xl bg-white/50"
                    alt="Company Logo"
                 />
-                <span className="text-2xl font-bold text-white">
+                <span className="text-2xl font-bold text-black  -white">
                    CoreStack Solutions
                 </span>
               </figure>
-                <p className="max-w-md text-gray-200 leading-relaxed text-xl">
+                <p className="max-w-md text-black -gray-200  font-light leading-relaxed text-xl">
                   Transforming business operations through 
                   growth-focused technologies.
                 </p>
             </Link>
 
-            <div className="
+            <button className="
                    cursor-pointer
                    h-fit 
                    text-white 
                    px-12 
                    py-4 
                    rounded-xl 
-                   bg-[#0066FF] 
+                   bg-[#03045e] 
                    shadow-sm 
                    font-bold
                    ">
                Schedule A Session
-            </div>
+            </button>
            
         </header>
 

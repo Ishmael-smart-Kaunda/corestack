@@ -96,74 +96,117 @@ const Navbar = () => {
           <header 
              className="
                 w-full 
-                f
-                top-0
-                flex 
+                fixed
+                flex
                 justify-between
-                items-end
+                items-center
+                top-0
                 bg-white
                 shadow-sm
                 px-5 
                 py-6
                 max-h-23
-                z-50
+                z-100
                 "
                >
-                  {/**LOGO */}
+               {/**LOGO */}
                <Link 
-                className="
+                className=" md:hidden
                   flex items-center border
                   rounded-lg
-                  h-14 w-50 p-5 
-                  translate-y-3
+                  h-10 w-30 p-5 
                
                "
                   >
                   <img 
                     src={logo} 
                     alt="Logo" 
-                    className="hidden h-20 scale-125
+                    className="hidden h-15
                      object-cover" 
                   />
                </Link>
                <nav className="
                       hidden 
                       md:flex 
+                      items-center
+                      justify-between
+                      max-w-screen-lg
+                      mx-auto
                       w-full
                      "
+               >
+                  {/**LOGO */}
+               <Link 
+                className="
+                  flex items-center border
+                  rounded-lg
+                  h-10 w-30 p-5 
+               
+               "
                   >
+                  <img 
+                    src={logo} 
+                    alt="Logo" 
+                    className="hidden h-15
+                     object-cover" 
+                  />
+               </Link>
+               
                <ul className="
                      flex 
-                     gap-15 
+                     justify-between
+                     items-center
+                     gap-10
+                     font-semibold
+                     text-[14px]
+                     tracking-[0.8px]
+                     text-black/70
                      "
                      >
                      <Link 
                      to="/"
-                     className="">
+                     className="hover:text-[#03045e] transition-all duration-300">
                            Home
                      </Link>
                      <Link 
                      to="/services"
-                     className="">
-                           Our services
+                     className="hover:text-[#03045e] transition-all duration-300">
+                           Services
                      </Link>
                      <Link 
                      to="/contact"
-                     className="">
-                           Our approach
+                     className="hover:text-[#03045e] transition-all duration-300">
+                          Approach
                      </Link>
                      <Link 
                      to="/industries"
-                     className="">
-                           current solutions
+                     className="hover:text-[#03045e] transition-all duration-300">
+                           Products
                      </Link>
                      <Link 
                      to="/about"
-                     className="">
+                     className="hover:text-[#03045e] transition-all duration-300">
                            About us
                      </Link>
+                     <Link to='/'
+                     className="
+                        px-8
+                        py-2 
+                        font-semibold
+                        rounded-xl 
+                        bg-[#03045e]
+                        text-white
+                        shadow-sm
+                        shadow-[#03045e]/20
+                        hover:bg-[#03045e]/90
+                        transition-all duration-300
+                        "
+                     >   
+                     Lets talk
+                </Link>
                </ul>
-               {/*user guide */}
+               {/*CTA */}
+               
              
             </nav>
  
@@ -221,7 +264,7 @@ const Navbar = () => {
                     
                     to="/"
                     onClick={toggleMenu}
-                    className=""
+                    className="hover:text-[#03045e] transition-all duration-300 "
                     >
                         Home
                  </NavLink>
