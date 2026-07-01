@@ -46,7 +46,7 @@ const CTA= ()=> {
           {/**CTA FORM */}
           <div className="w-full h-full border border-white/20 rounded-xl p-4">
               <span className="text-white mx-auto block text-center font-bold text-lg mb-4">
-                  Schedule a Consultation
+                  Schedule a Session
               </span>
              <form action="" className="text-white/50">
                 <label htmlFor="name" className="flex flex-col gap-3">

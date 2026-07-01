@@ -143,7 +143,7 @@ const FeaturedSolutions = () =>{
                                                   md:flex 
                                                   flex-col
                                                   w-full
-                                                  md:max-w-70 
+                                                  md:max-w-75 
                                                   bord er
                                                   animate -(--animate-marqueeMobile) 
                                                   md:animate-(--animate-marquee)
