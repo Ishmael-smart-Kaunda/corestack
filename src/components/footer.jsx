@@ -11,6 +11,8 @@ import { MdFacebook } from "react-icons/md";
 import { PiFacebookLogoBold } from "react-icons/pi";
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+
+import logo from "../assets/logo/logo.png"
 const Footer = ()=> {
   return (
     <footer className="bg-gray-100 text-gray-700 mt-32 px-6">
@@ -35,11 +37,11 @@ const Footer = ()=> {
             <Link to="/" className="w-fit space-y-6">
               <figure className="">
                 <img
-                   src="/logo.svg"
-                   className="size-12 mr-3 border rounded-xl bg-white/50"
+                   src={logo}
+                   className="w-20 -translate-x-6 translate-y-2  rounded-xl"
                    alt="Company Logo"
                 />
-                <span className="text-2xl font-bold text-black  -white">
+                <span className="text-2xl font-bold text-[#03045e]">
                    CoreStack Solutions
                 </span>
               </figure>

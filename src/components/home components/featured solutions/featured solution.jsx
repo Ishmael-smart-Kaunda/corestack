@@ -15,7 +15,7 @@ const FeaturedSolutions = () =>{
                          </h2>
                     </header>   
                     <main className=" mx-auto p-4  overflow-hidden border border-black/5 my-16 rounded-2xl shadow-sm">
-                         <div className="grid lg:grid-cols-2">
+                         <div className="grid md:grid-cols-2 lg:grid-cols-2">
                               <aside className="md:relative">
                                    {/* meta data 
                                    <div className="flex items-center gap-3 my-6">
@@ -160,7 +160,8 @@ const FeaturedSolutions = () =>{
                                                         md:my-3
                                                         
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-red-950 
+                                                        text-white
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -174,14 +175,16 @@ const FeaturedSolutions = () =>{
                                                         border 
                                                         border-black/8 
                                                         rounded-xl 
-                                                        
+                                                         
+                                                        bg-blue-950 
+                                                        text-white
                                                         p-5 
                                                         md:my-3
                                                         
                                                         p-5 
                                                         my-3
                                                         shadow-xl 
-                                                        bg-white 
+                                                        
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -204,7 +207,8 @@ const FeaturedSolutions = () =>{
                                                         p-5 
                                                         my-3
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-yellow-900 
+                                                        text-white 
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -223,7 +227,8 @@ const FeaturedSolutions = () =>{
                                                         md:my-3
                                                         
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-green-900 
+                                                        text-white 
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -244,7 +249,8 @@ const FeaturedSolutions = () =>{
                                                         md:my-3
                                                         
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-red-950 
+                                                        text-white 
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -261,7 +267,8 @@ const FeaturedSolutions = () =>{
                                                         p-5 
                                                         my-3
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-blue-950 
+                                                        text-white 
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -280,7 +287,8 @@ const FeaturedSolutions = () =>{
                                                         p-5 
                                                         my-3
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-yellow-900 
+                                                        text-white 
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
@@ -298,7 +306,8 @@ const FeaturedSolutions = () =>{
                                                         p-5 
                                                         my-3
                                                         shadow-xl 
-                                                        bg-white 
+                                                        bg-green-900 
+                                                        text-white  
                                                         space-y-6
                                                         "> 
                                                        <h4 className="font-semibold">
