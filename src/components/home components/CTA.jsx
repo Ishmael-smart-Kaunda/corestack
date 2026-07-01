@@ -104,7 +104,7 @@ const CTA= ()=> {
                             type="time"
                             id="time"
                               className=" 
-                              w-[35%] 
+                              w-[81%] 
                               md:w-full  
                               bg-gray-300/10 
                               placeholder:text-gray-400 
