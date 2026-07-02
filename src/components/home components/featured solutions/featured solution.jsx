@@ -70,12 +70,11 @@ const FeaturedSolutions = () =>{
                                    
                                          <Link to=''
                                              className="
+                                                hidden
+                                                md:block
                                                 md:absolute
                                                 bottom-6
                                                 left-2
-                                                inline-flex 
-                                                items-center 
-                                                justify-center 
                                                 px-8 
                                                 py-4 
                                                 text-base 
@@ -96,7 +95,7 @@ const FeaturedSolutions = () =>{
                                                flex 
                                                justify-center 
                                                py-6 
-                                               bor der
+                                               
                                                ">
 
                                         <div className="
@@ -104,12 +103,13 @@ const FeaturedSolutions = () =>{
                                                flex
                                                flex-col
                                                items-end
+                                               max-h-100
                                                md:max-h-80 
                                                overflow-hidden 
                                                gap-4 
                                                w-full
-                                               px-2
-                                               borde r
+                                               md:px-2
+                                               
                                                ">
                                           {/*   MARQUE BORDER TOP */}
                                           <div className="
@@ -127,6 +127,7 @@ const FeaturedSolutions = () =>{
                                           />
                                           {/*   MARQUE BORDER bottom */}
                                           <div className="
+                                                  
                                                   absolute 
                                                   bottom-0 
                                                   w-full 
@@ -139,14 +140,15 @@ const FeaturedSolutions = () =>{
                                                   "/>
                                           {/*CONTENT */}
                                           <div className="
-                                                  hidden
-                                                  md:flex 
+                                                  
+                                                  flex 
                                                   flex-col
+                                                 
                                                   w-full
                                                   md:max-w-75 
-                                                  bord er
+                                                  
                                                   animate -(--animate-marqueeMobile) 
-                                                  md:animate-(--animate-marquee)
+                                                  md: animate-(--animate-marquee)
                                                   "
                                                   >
 
@@ -157,7 +159,7 @@ const FeaturedSolutions = () =>{
                                                         rounded-xl 
                                                         
                                                         p-5 
-                                                        md:my-3
+                                                        my-3
                                                         
                                                         shadow-xl 
                                                         bg-red-950 
@@ -224,7 +226,7 @@ const FeaturedSolutions = () =>{
                                                         border-black/8 
                                                         rounded-xl 
                                                         p-5 
-                                                        md:my-3
+                                                        my-3
                                                         
                                                         shadow-xl 
                                                         bg-green-900 
@@ -246,7 +248,7 @@ const FeaturedSolutions = () =>{
                                                         border-black/8 
                                                         rounded-xl 
                                                         p-5 
-                                                        md:my-3
+                                                        my-3
                                                         
                                                         shadow-xl 
                                                         bg-red-950 
@@ -319,58 +321,33 @@ const FeaturedSolutions = () =>{
                                                        </p>
                                                   </div>
 
-
-
-                                                  {/*
-                                                  <div class=" hidden
-                                                          w-full 
-                                                          h-70 
-                                                          mb-4 
-                                                          bg-black/10 
-                                                          rounded-md 
-                                                          shrink-0 
-                                                          overflow-hidden
-                                                          ">
-                                                       <img src="https://i.pinimg.com/736x/cd/13/14/cd13147ad6658e5fa3f50927cc2373e4.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>
-                                                  <div class=" hidden
-                                                  w-full h-70 mb-4 bg-black/10 rounded-md shrink-0 overflow-hidden">
-                                                       <img src="https://i.pinimg.com/736x/55/34/5b/55345b66755c3a6b2b220ce17c7eaba5.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>
-                                                  <div class=" hidden w-full h-70 mb-4 bg-black/10 rounded-md shrink-0 overflow-hidden">
-                                                       <img src="https://i.pinimg.com/1200x/93/89/ae/9389ae8c329b528a2270f7b6a19b3176.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>*/}
-                                                  
-
-                                                 {/*
-                                                  <div class="w-full h-70 mb-4 bg-black/10 rounded-md shrink-0 overflow-hidden">
-                                                       <img src="https://i.pinimg.com/736x/cd/13/14/cd13147ad6658e5fa3f50927cc2373e4.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>
-                                                  <div class="w-full h-70 mb-4 bg-black/10 rounded-md shrink-0 overflow-hidden">
-                                                       <img src="https://i.pinimg.com/736x/55/34/5b/55345b66755c3a6b2b220ce17c7eaba5.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>
-                                                  <div class=" w-full h-70 mb-4 bg-black/10 rounded-md shrink-0 overflow-hidden">
-                                                       <img src="https://i.pinimg.com/1200x/93/89/ae/9389ae8c329b528a2270f7b6a19b3176.jpg" 
-                                                       alt="shirts on stock" 
-                                                       className="w-full h-full object-cover" />
-                                                  </div>*/}
                                           </div>
                                           
                                         </div>
 
                                    </aside>
 
+                                   <Link to=''
+                                   className="
+                                        md:hidden
+                                        px-8 
+                                        py-4 
+                                        my-8
+                                        text-base 
+                                        text-center
+                                        font-medium 
+                                        text-gray-900 
+                                        bg-[#03045e]/10 
+                                        border border-blue-500/50
+                                        rounded-lg 
+                                        hover:bg-gray-100 
+                                        ">
+                                   Request A Demo
+                              </Link>
+
                               </div>
+
+                              
                          </main>
                     </div> 
             </section>

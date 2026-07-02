@@ -52,6 +52,8 @@ const Footer = ()=> {
             </Link>
 
             <button className="
+                   hidden
+                   md:block
                    cursor-pointer
                    h-fit 
                    text-white 
@@ -138,35 +140,42 @@ const Footer = ()=> {
             </h3>
 
             <ul className="flex flex-col space-y-4 text-[15px] font-light">
-              <li>
-                <a href="/solutions/smartshop" className="hover:text-gray-600">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a href="/solutions" className="hover:text-gray-600">
+              
+                <Link 
+                    to="/" 
+                    className="
+                      hover:text-gray-600
+                  ">
+                    Home
+                </Link>
+                <Link 
+                    to="/services" 
+                    className="
+                      hover:text-gray-600
+                  ">
                  Our Services
-                </a>
-              </li>
-
-              <li>
-                <a href="/custom-solutions" className="hover:text-gray-600">
+                </Link>
+                <Link 
+                    to="/" 
+                    className="
+                      hover:text-gray-600
+                  "> 
                   Our Solutions
-                </a>
-              </li>
-
-              <li>
-                <a href="/custom-solutions" className="hover:text-gray-600">
+                </Link>
+                <Link 
+                    to="/contact" 
+                    className="
+                       hover:text-gray-600
+                    ">
                   About Us
-                </a>
-              </li>
-
-              <li>
-                <a href="/custom-solutions" className="hover:text-gray-600">
-                  Contact Us
-                </a>
-              </li>
+                </Link>
+                <Link 
+                    to="/contact" 
+                    className="
+                       hover:text-gray-600
+                    ">
+                     Contact Us
+                </Link>
             </ul>
           </div>
 
@@ -185,21 +194,21 @@ const Footer = ()=> {
 
             <ul className="space-y-5 text-[15px] font-light">
               <li className="flex items-start gap-3">
-                <BsWhatsapp className="mt-1 text-blue-500" size={18} />
+                <BsWhatsapp className="mt-1 text-[#03045e]" size={18} />
                  <a href="tel: +265887914433" className="hover:text-gray-600">
                   +265 981 457 286
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
-                <FiPhone className="text-blue-500" size={18} />
+                <FiPhone className="text-[#03045e]" size={18} />
                 <a href="tel:+265887914433" className="hover:text-gray-600">
                   +265 887 914 433
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
-                <FiMail className="text-blue-500" size={18} />
+                <FiMail className="text-[#03045e]" size={18} />
                 <a href="mailto:core..." className="hover:text-gray-600">
                   hello@corestack.com
                 </a>

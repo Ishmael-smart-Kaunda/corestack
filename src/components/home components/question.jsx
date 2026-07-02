@@ -12,12 +12,20 @@ import { HiMinus } from "react-icons/hi";
 export default function Question({id, Q, A, handleExpansion, isExpanded}){
                         return(
                                 <div onClick={()=>handleExpansion(id)} 
-                                     className="
+                                     className=
+                                        {`${id===isExpanded 
+                                          ? 
+                                          'bg-gray-100' 
+                                          : ''
+                                         } 
+                                          transition-all 
+                                          text-[14px]
+                                          duration-500 
                                         cursor-pointer 
                                         w-full
                                         flex 
-                                        flex-col 
-                                        md:flex-row 
+                                        flex -col 
+                                        md:f lex-row 
                                         justify-between 
                                         gap-4 
                                         my-4 
@@ -29,10 +37,10 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                         shadow-black/10 
                                         
                                         p-3
-                                        ">
-                                    <div className={`${id===isExpanded ? 'h-65 md:h-25' : 'h-6'} transition-all duration-500 overflow-hidden space-y-4`}>
-                                            <h3 className="font-semibold text-[15px]">
-                                                {Q}
+                                        `}>
+                                    <div className={`${id===isExpanded ? 'h-40 md:h-30 ' : 'h-10'} transition-all duration-500 overflow-hidden space-y-4`}>
+                                            <h3 className="font-semibold text-[14px]">
+                                             {Q}
                                              </h3>
                                             <p className={
                                                  `${id===isExpanded 
@@ -41,28 +49,17 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                                   : 'opacity-0'} 
                                                   transition-all 
                                                   text-[14px]
-                                                  tracking-[0.5px]
                                                   duration-500 
                                                   font-light 
-                                                  opacity
+                                                  opacity 
+                                                  
                                                   `}
                                                 >
                                                 {A}
                                             </p>
                                     </div>
-                                       <button className="bordr p-1 rounded-full text-[#03045e]">
-                                        {/*Conditional rendering to display either minus or plus sign depending on 
-                                           whether the question box is expanded or not.
-                                        */}
-                                        {
-                                           id===isExpanded 
-                                              ? 
-                                                <HiMinus className={`size-6 shrink-0 transition-all`}/> 
-                                              :  
-                                                <HiPlus className={` size-6 shrink-0 transition-all`}/>
-                                        }
-                                          
-                                         
+                                       <button className="self-start p-1 rounded-full text-[#03045e]">
+                                         <HiChevronDown className={`size-5 shrink-0 transition-all`}/>
                                        </button>
                                      
                                 </div>

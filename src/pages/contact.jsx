@@ -1,8 +1,18 @@
-
-
+import Nav from "../components/contact components/navBar";
+import ContactInfor from "../components/contact components/contack info";
+import Hero from "../components/contact components/hero";
+import Container from "../components/contact components/container";
+import Socials from "../components/contact components/social";
 const Contact = () => {
     return ( 
-            <h1 className="mx-auto font-bold text-4xl">contact</h1>
+            <>
+               <Nav/>
+               <Hero/>
+               <ContactInfor/>
+               <Container/>
+               <Socials/>
+            </>
+
     )
 }   
 export default Contact;

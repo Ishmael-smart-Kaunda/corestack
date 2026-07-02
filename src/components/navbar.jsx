@@ -188,7 +188,7 @@ const Navbar = () => {
                      className="hover:text-[#03045e] transition-all duration-300">
                            About us
                      </Link>
-                     <Link to='/'
+                     <Link to='/contact'
                      className="
                         px-8
                         py-2 

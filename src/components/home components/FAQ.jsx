@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function FAQ(){
                   
                 {/*stte for mobile nav accordion */}
-                const [isExpanded, setIsExpanded]=useState(null)
+                const [isExpanded, setIsExpanded]=useState(1)
                 const toggleExpansion =(id)=>{
                       
                      setIsExpanded(isExpanded===id ? null : id)
@@ -23,7 +23,8 @@ export default function FAQ(){
                                      max-w-screen-lg 
                                      my-24
                                      mx-auto
-                                     p-6
+                                     px-6
+                                     md:px-0
                                      ">
                               <header className="text-center pb-4">
                                     <h2 className="text-3xl md:text-4xl font-bold my-3">
@@ -38,7 +39,7 @@ export default function FAQ(){
                                 <aside 
                                    className="
                                        w-full 
-                                        
+                                       
                                        md:sticky 
                                        md:top-30 
                                        self-start
@@ -125,6 +126,41 @@ export default function FAQ(){
                               
 
                              </div>
+
+                             {/* faq cta for mobile devices */}
+                             <div 
+                                    className="
+                                        w-full
+                                        md:hidden 
+                                        mt-6
+                                        h-fit
+                                        space-y-4
+                                        border
+                                        border-dotted
+                                        border-[#03045e]/30
+                                        rounded-xl
+                                        p-3"
+                                 >
+                                 <h3 className="text-lg md:text-xl font-semibold">
+                                    Still have questions?
+                                    <br/>
+                                 </h3>
+                                 <p className="">
+                                       Our support team is always ready to respond to your 
+                                       inquiries.
+                                 </p>
+                                 <Link to="/contact" 
+                                       className="
+                                          text-[#03045e] 
+                                          font-semibold
+                                          hover:underline
+                                          ">
+                                    Contact Us
+                                 </Link>
+
+
+                                 </div>
+
 
                          </section>
                    )

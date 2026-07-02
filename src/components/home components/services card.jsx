@@ -24,7 +24,7 @@ const ServicesCard = ({id, icon, title, description, deliverables, businessImpac
                       duration-1000"
                   >
                   <header>
-                    <div class="w-fit sm:p-2 p-3  bg-black/2 border border-black/4 rounded-full my-4">
+                    <div className="w-fit sm:p-2 p-3  bg-black/2 border border-black/4 rounded-full my-4">
                        <Icon className="size-7 text-blue-900/80"/>
                     </div>
                     <h3 className="
