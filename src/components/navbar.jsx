@@ -95,63 +95,62 @@ const Navbar = () => {
    return (
           <header 
              className="
-                w-full 
-                fixed
-                flex
-                justify-between
-                items-center
-                top-0
-                bg-white
-                shadow-sm
-                px-5 
-                py-6
-                max-h-23
-                z-100
+               w-full 
+               fixed
+               top-0
+               left-0
+               z-50
+               w-full
+               px-6
+               py-4  
+               bg-white
+               shadow-sm
+               z-100
                 "
                >
-               {/**LOGO */}
-               <Link 
-                className=" md:hidden
-                  flex items-center border
-                  rounded-lg
-                  h-10 w-30 p-5 
-               
+               {/**nav */}
+               <nav 
+               className="
+                  hidden 
+                  md:flex 
+                  items-center
+                  justify-between
+                  max-w-screen-lg
+                  mx-auto
+                  w-full
                "
-                  >
-                  <img 
-                    src={logo} 
-                    alt="Logo" 
-                    className="hidden h-15
-                     object-cover" 
-                  />
-               </Link>
-               <nav className="
-                      hidden 
-                      md:flex 
-                      items-center
-                      justify-between
-                      max-w-screen-lg
-                      mx-auto
-                      w-full
-                     "
                >
-                  {/**LOGO */}
+               {/** logo */}
                <Link 
-                className="
-                  flex items-center border
-                  rounded-lg
-                  h-10 w-30 p-5 
-               
-               "
-                  >
-                  <img 
-                    src={logo} 
-                    alt="Logo" 
-                    className="hidden h-15
-                     object-cover" 
-                  />
+                  to='/'
+                  className=""
+               >
+               <figure 
+                  className="
+                     flex 
+                     items-center
+                     h-full
+                     border
+                     border-black/7
+                     rounded-md
+                     font-semibold
+
+               ">
+                  <img src={logo} 
+                     alt="logo" 
+                     className="
+                        w-12
+                  "/>
+                  <figcaption
+                     className="
+                     mr-3
+                     text-[#090040]
+                     ">
+                     Corestack Solutions
+                  </figcaption>
+               </figure>
                </Link>
-               
+               {/*nav links */}
                <ul className="
                      flex 
                      justify-between
