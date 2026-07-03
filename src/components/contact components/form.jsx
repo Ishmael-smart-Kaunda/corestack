@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 
 const ContactForm = () =>{
            return(
-              <section className="w-full">
+              <section className="w-full  px-6 md:px-0">
                   
-                  <header className="text-center mb-8 text-[#393E46]">
+                  <header className="w-full md:w-8/10 mx-auto text-center mb-8 text-[#393E46]">
                       <h2 className="font-semibold text-xl  tracking-[0.5px]">
                           Send us a message
                       </h2>
-                      <p className="w-8/10 mx-auto text-md my-3">
+                      <p className="  text-md my-3">
                           Share your goals or challenges with us. 
                           We'll help you find the right path forward. 
                       </p>
                   </header>
                   <form action="" className="space-y-6 text-[#393E46]/80 font-semibold">
-                     <fieldset className="flex gap-6 justify-between">
-                        <label htmlFor="" className="w-1/2  flex flex-col gap-3 font-semibold">
+                     <fieldset className="flex flex-col md:flex-row gap-3 justify-between">
+                        <label htmlFor="" className="md:w-1/2 flex flex-col gap-3 font-semibold">
                             Name
                             <input 
                                type="text" 
@@ -33,7 +33,7 @@ const ContactForm = () =>{
                                
                             />
                         </label>
-                        <label htmlFor="" className="w-1/2 flex flex-col gap-3 font-semibold">
+                        <label htmlFor="" className="md:w-1/2 flex flex-col gap-3 font-semibold">
                             Email
                             <input 
                                type="text" 
@@ -94,8 +94,8 @@ const ContactForm = () =>{
                                 className="
                                     w-1/2
                                     rounded-lg 
-                                    px-8 
-                                    py-2
+                                    md:px-8 
+                                    p-2
                                     text-base
                                     font-semibold 
                                     text-white
@@ -111,10 +111,11 @@ const ContactForm = () =>{
                               className="
                                     flex
                                     justify-center
+                                    items-center
                                     w-1/2
                                     rounded-lg 
-                                    px-8 
-                                    py-3
+                                    md:px-8 
+                                    p-2
                                     text-base
                                     font-semibold 
                                     text-[#03045e]

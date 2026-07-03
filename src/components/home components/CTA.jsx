@@ -13,8 +13,9 @@ const CTA= ()=> {
               gap-4 
               max-w-screen-lg 
               mx-auto 
-              bg-black/70 
-              rounded-3xl 
+              bg-[#222831] 
+              rounded-md
+              md:rounded-xl 
               overflow-hidden 
               p-4 
               md:p-8 
@@ -44,7 +45,7 @@ const CTA= ()=> {
             </div>
           </div>
           {/**CTA FORM */}
-          <div className="w-full h-full border border-white/20 rounded-xl p-4">
+          <div className="w-full h-full border border-white/20 rounded-md p-4">
               <span className="text-white mx-auto block text-center font-bold text-lg mb-4">
                   Schedule a Session
               </span>
@@ -61,7 +62,7 @@ const CTA= ()=> {
                        focus:ring-blue-900/40  
                        focus:outline-none
                        p-2
-                       rounded-md" 
+                       rounded-sm" 
                        placeholder="Your name
                        " 
                   />
@@ -78,12 +79,12 @@ const CTA= ()=> {
                         focus:ring-blue-900/40 
                         focus:outline-none
                         p-2
-                        rounded-md" 
+                        rounded-sm" 
                         placeholder="Your email" 
                         />
                 </label>
                 <fieldset className="flex gap-2 w-full">
-                    <label htmlFor="date" className="w-5/10 flex flex-col gap-3">
+                    <label htmlFor="date" className="w-[42%] overflow-hidden md:w-1/2 flex flex-col gap-3">
                       Date
                       <input 
                           type="date"
@@ -112,7 +113,7 @@ const CTA= ()=> {
                               focus:ring-blue-900/40
                               focus:outline-none
                               p-2
-                              rounded-md"   
+                              rounded-sm"   
                       />
                     </label>
                 </fieldset>
@@ -130,7 +131,7 @@ const CTA= ()=> {
                        focus:ring-blue-900/40 
                        focus:outline-none
                        p-2
-                       rounded-md" 
+                       rounded-sm" 
                        placeholder="Your message"
                   />
  

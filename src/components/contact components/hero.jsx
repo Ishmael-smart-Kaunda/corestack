@@ -3,90 +3,107 @@ const Hero = () =>{
          return(
                <section 
                   className="
-                     
                      w-full 
                      h-[100vh] 
                      md:h-[90vh] 
-                     
                      py-8
                      mt-12
                      flex
                      px-6
                ">
-                {/*bg img */}
-                <img 
-                  src=""
-                  alt="Contact Background Image" 
-                  className="
-                     hidden
-                      
-                     object-cover
-                  " 
-                />
+                {/*container */}
                 <div 
                    className="
-                      py-6
-                      rounded-xl
-                      flex
-                      flex-col
-                      items-center
-                      justify-center
+                      relative
+                      rounded-md
+                      md:rounded-xl
+                      overflow-hidden
                       w-full 
-                      md:h-8/10
+                      h-[80vh]
+                      md:h-full
                       max-w-screen-lg
+                      flex
                       m-auto
-                      border
-                      border-white
-                      text-center
-                      text-white/80
-                      space-y-8
-                      lg:px-8
-                      bg-[#222831]
-               ">
-               <span 
-                  className="
-                   tracking-widest
-                   uppercase
-                   text-xs
+                      bg-radial-[at_50%_75%] from-[#03045e]/80 to-[#000]/30
 
-                  ">
-                  Your Next Move
-               </span>
-               <h1 
+               "> 
+               {/*bg img */}
+                <img 
+                  src="https://i.pinimg.com/1200x/1d/05/75/1d0575a8f30cef918f0d4db8c91b8718.jpg"
+                  alt="Contact Background Image" 
                   className="
-                     text-4xl
-                     md:text-5xl
-                     font-extrabold
+                     absolute
+                     inset-0 
+                     w-full
+                     h-full
+                     object-cover
+                     mix-blend-overlay
+
+                  " 
+                />
+                {/*overlay */}
+                <div className="absolute inset-0 bg-black/60 w-full h-full"/>
+                {/*content */}
+               <div 
+                  className="
                      
-                    ">
-                   Let's Start the Conversation
-               </h1>
-               <p 
+                     
+                     relative
+                     flex
+                     flex-col
+                     m-auto
+                     items-center
+                     justify-center
+                     text-center
+                     text-white/80
+                     space-y-8
+                     lg:px-8
+                     
+                  "> 
+                  <span 
+                     className="
+                     tracking-widest
+                     uppercase
+                     text-xs
+
+                     ">
+                     Your Next Move
+                  </span>
+                  <h1 
+                     className="
+                        text-4xl
+                        md:text-5xl
+                        lg:text-6xl
+                        font-extrabold
+                        
+                     ">
+                     Let's Start the Conversation
+                  </h1>
+                  <p 
+                     className="
+                     text-xl  
+                  ">
+                     Building new a model, improving existing operations, or solving 
+                     business challenges starts with a conversation. We're ready to 
+                     understand your goals and help you move forward.
+
+               </p>
+               {/*button for scrolling down */}
+               <button 
                   className="
-                    text-xl  
-                 ">
-                  Whether you're exploring a new digital solution, 
-                  improving existing operations, or looking to solve a 
-                  business challenge, we're ready to listen, understand, 
-                  and help you move forward.
-
-              </p>
-              {/*button for scrolling down */}
-              <button 
-                 className="
-                   cursor-pointer
-                   px-8
-                   shadow
-                   shadow-[#03045e]
-                   py-4
-                   rounded-md
-                   bg-[#03045e]
-                  font-bold
-             ">
-               Start Right Here
-              </button>
+                     cursor-pointer
+                     px-8
+                     shadow
+                     shadow-[#03045e]
+                     py-4
+                     rounded-md
+                     bg-[#03045e]
+                     font-bold
+               ">
+                  Start Right Here
+               </button>
+               </div>
              </div>
-
             </section>
          )
 }

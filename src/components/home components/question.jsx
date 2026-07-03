@@ -32,13 +32,13 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                         items-center  
                                         border 
                                         border-black/5 
-                                        rounded-[3px] 
+                                        rounded-sm 
                                         shadow-sm
                                         shadow-black/10 
                                         
                                         p-3
                                         `}>
-                                    <div className={`${id===isExpanded ? 'h-40 md:h-30 ' : 'h-10'} transition-all duration-500 overflow-hidden space-y-4`}>
+                                    <div className={`${id===isExpanded ? 'h-65 md:h-30 ' : 'h-10'} transition-all duration-500 overflow-hidden space-y-4`}>
                                             <h3 className="font-semibold text-[14px]">
                                              {Q}
                                              </h3>
@@ -48,7 +48,7 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                                   'opacity-100' 
                                                   : 'opacity-0'} 
                                                   transition-all 
-                                                  text-[14px]
+                                                  text-[16px]
                                                   duration-500 
                                                   font-light 
                                                   opacity 

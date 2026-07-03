@@ -45,7 +45,7 @@ export default function FAQ(){
                                        self-start
                                        h-fit 
                                        
-                                       rounded-xl
+                                       rounded-md
                                        py-3
                                        
                                        "
@@ -87,7 +87,8 @@ export default function FAQ(){
                                         border-[#03045e]/30 
                                         shad ow-sm
                                         shad ow-[#03045e]/10
-                                        rounded-xl
+                                        rounded-
+                                        md:rounded-lg
                                         p-3"
                                  >
                                  <h3 className="text-lg md:text-xl font-semibold">
@@ -138,14 +139,15 @@ export default function FAQ(){
                                         border
                                         border-dotted
                                         border-[#03045e]/30
-                                        rounded-xl
-                                        p-3"
+                                        rounded-lg
+                                        p-3
+                                        py-6"
                                  >
-                                 <h3 className="text-lg md:text-xl font-semibold">
+                                 <h3 className="text-xl font-semibold">
                                     Still have questions?
                                     <br/>
                                  </h3>
-                                 <p className="">
+                                 <p className="text-lg">
                                        Our support team is always ready to respond to your 
                                        inquiries.
                                  </p>

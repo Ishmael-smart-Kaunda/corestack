@@ -6,25 +6,43 @@ import { CiInstagram } from "react-icons/ci"
 
 export default function Socials () {
             return(
-                    <section className="px-6">
+                    <section className="px-6 py-12 bg-gray-200/50">
                      <div 
                         className="
                            w-full
                            max-w-screen-lg
                            mx-auto
-                           mt-16 
-                           md:mt-24
                            bg-[#222831] 
                            p-5 
                            md:px-10 
-                            
-                           rounded-t-xl 
-                           space-y-8
+                           rounded-md
+                           md:rounded-xl 
+                           
                            ">
+                        <div 
+                           className="
+                              flex
+                              flex-col
+                              gap-8
+                              md:flex-row
+                              justify-between
+                         ">
+                        {/*social hundles*/}
+                        <div 
+                          className="
+                          space-y-6
+                          
+                        ">
                         <h1 className="text-[15px] text-white font-semibold uppercase tracking-[1.5px]">
                            Our Social Hundles
                         </h1>
-                        <div className="flex justify-between items-center">
+                        <div 
+                           className="
+                             w-fit
+                             flex 
+                             gap-5
+                             items-center
+                             ">
                         <Link  
                            to="/" 
                            target="_blank"
@@ -83,7 +101,35 @@ export default function Socials () {
                            <BsInstagram  className="size-6 text-white" />
                         </Link>
                         
-                           </div>
+                        </div>
+                       </div>
+
+                       {/*copy right*/}
+                        <div 
+                           className="
+                              flex
+                              flex-col
+                              justify-between
+                              pt-6
+                              ">
+                           <p 
+                              className="
+                                 tracking-wide
+                                 uppercase
+                                 text-white/80
+                                 text-[13px]
+                              ">
+                              Copy right
+                           </p>
+                           <p className="text-sm text-gray-300">
+                              © { new Date().getFullYear()} 
+                              <hr className="text-gray-500" />
+                              CoreStack Solutions. 
+                              All rights reserved.
+                           </p>
+
+                        </div>
+                       </div>
                       </div>
                   </section>
             )

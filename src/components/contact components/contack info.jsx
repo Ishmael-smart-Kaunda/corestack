@@ -47,7 +47,8 @@ const ContactInfor = () =>{
                            h-full
                            p-4
                            bg-white
-                           rounded-xl
+                           rounded-md
+                           md:rounded-xl
                            space-y-4
                       ">
                         <FiPhone className="size-6"/>
@@ -64,7 +65,8 @@ const ContactInfor = () =>{
                            h-full
                            p-4
                            bg-white
-                           rounded-xl
+                           rounded-md
+                           md:rounded-xl
                            space-y-4
                       ">
                         <BsWhatsapp className="size-6"/>
@@ -85,7 +87,8 @@ const ContactInfor = () =>{
                            h-full
                            p-4
                            bg-white
-                           rounded-xl
+                           rounded-md
+                           md:rounded-xl
                            space-y-4
                       ">
                         <FiMail className="size-6"/>

@@ -29,7 +29,7 @@ const Footer = ()=> {
             gap-6 
             bg-gray-200/80 
             
-            rounded-xl 
+            rounded-lg 
             mb-8
             py-6
             px-8"
@@ -38,14 +38,14 @@ const Footer = ()=> {
               <figure className="">
                 <img
                    src={logo}
-                   className="w-20 -translate-x-6 translate-y-2  rounded-xl"
+                   className="w-20 -translate-x-6 translate-y-2"
                    alt="Company Logo"
                 />
                 <span className="text-2xl font-bold text-[#03045e]">
                    CoreStack Solutions
                 </span>
               </figure>
-                <p className="max-w-md text-black -gray-200  font-light leading-relaxed text-xl">
+                <p className="max-w-md text-black  font-light leading-relaxed text-[21px]">
                   Transforming business operations through 
                   growth-focused technologies.
                 </p>
