@@ -47,10 +47,12 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                                   ? 
                                                   'opacity-100' 
                                                   : 'opacity-0'} 
-                                                  transition-all 
-                                                  text-[16px]
+                                                  transition-all
+                                                  tracking-2 
+                                                  text-[12px]
                                                   duration-500 
-                                                  font-light 
+                                                  text-[#202940]
+                                                  font-semibold 
                                                   opacity 
                                                   
                                                   `}
