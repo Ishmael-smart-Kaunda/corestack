@@ -1,5 +1,13 @@
+import { useRef } from "react";
+
+
+
+
+
+
 
 const Hero = () =>{
+      
          return(
                <section 
                   className="
@@ -89,7 +97,8 @@ const Hero = () =>{
 
                </p>
                {/*button for scrolling down */}
-               <button 
+               <a 
+                  href="#contact-info"
                   className="
                      cursor-pointer
                      px-8
@@ -101,7 +110,7 @@ const Hero = () =>{
                      font-bold
                ">
                   Start Right Here
-               </button>
+               </a>
                </div>
              </div>
             </section>

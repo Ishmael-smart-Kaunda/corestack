@@ -17,10 +17,11 @@ const ContactForm = () =>{
                   </header>
                   <form action="" className="space-y-6 text-[#393E46]/80 font-semibold">
                      <fieldset className="flex flex-col md:flex-row gap-3 justify-between">
-                        <label htmlFor="" className="md:w-1/2 flex flex-col gap-3 font-semibold">
+                        <label htmlFor="name" className="md:w-1/2 flex flex-col gap-3 font-semibold">
                             Name
                             <input 
-                               type="text" 
+                               type="text"
+                               name="name" 
                                className="
                                    p-2 
                                    outline-none 
@@ -33,10 +34,11 @@ const ContactForm = () =>{
                                
                             />
                         </label>
-                        <label htmlFor="" className="md:w-1/2 flex flex-col gap-3 font-semibold">
+                        <label htmlFor="email" className="md:w-1/2 flex flex-col gap-3 font-semibold">
                             Email
                             <input 
                                type="text" 
+                               name="email"
                                className="
                                   p-2 
                                   outline-none
@@ -54,10 +56,11 @@ const ContactForm = () =>{
                      </fieldset>
 
                      
-                        <label htmlFor="" className="w-full flex flex-col gap-3 font-semibold">
+                        <label htmlFor="subject" className="w-full flex flex-col gap-3 font-semibold">
                             Subject
                             <input 
                                type="text" 
+                               name="subject"
                                className="
                                    p-2
                                    outline-none 
@@ -70,11 +73,11 @@ const ContactForm = () =>{
                                
                             />
                         </label>
-                        <label htmlFor="" className="w-full flex flex-col gap-3 font-semibold">
+                        <label htmlFor="message" className="w-full flex flex-col gap-3 font-semibold">
                             A short message
                             <textarea 
                                type="text"
-                               name="messate"
+                               name="message"
                                rows={6} 
                                className="
                                    p-2 

@@ -16,6 +16,7 @@ import { TbPhonePlus, TbPhoneRinging } from "react-icons/tb"
 const ContactInfor = () =>{
          return(
                <section 
+                   id="contact-info"
                    className="
                       w-full
                       py-16

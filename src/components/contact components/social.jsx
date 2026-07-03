@@ -121,12 +121,12 @@ export default function Socials () {
                               ">
                               Copy right
                            </p>
-                           <p className="text-sm text-gray-300">
+                           <span className="text-sm text-gray-300">
                               © { new Date().getFullYear()} 
                               <hr className="text-gray-500" />
                               CoreStack Solutions. 
                               All rights reserved.
-                           </p>
+                           </span>
 
                         </div>
                        </div>
