@@ -1,8 +1,3 @@
-import { useRef } from "react";
-
-
-
-
 
 
 
@@ -75,7 +70,7 @@ const Hero = () =>{
                      text-[10px]
 
                      ">
-                     Your Next Move Starts Here
+                     Get To Know Us
                   </span>
                   <h1 
                      className="

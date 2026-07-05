@@ -162,37 +162,165 @@ const Navbar = () => {
                      text-black/70
                      "
                      >
-                     <Link 
+                     <NavLink 
                      to="/"
-                     className="hover:text-[#03045e] transition-all duration-300">
-                           Home
-                     </Link>
-                     <Link 
+                     className={({ isActive }) => `
+                         relative
+                         ${isActive 
+                           ?"text-[#03045e]" 
+                           : ""
+                        }
+                     `}
+                     >
+                     {  ({isActive})=>(
+                        <>
+                          Home
+                            <div className={`
+                               absolute 
+                               left-0 
+                               bottom-0
+                               h-[0.5px]
+                               bg-[#03045e]
+                               transition-all duration-500
+                               ${isActive 
+                                 ? 'w-full'
+                                 : 'w-0'
+                                }
+                              `}
+                             />
+                        </>
+                     )}
+                          
+                     </NavLink>
+
+
+                     <NavLink
                      to="/services"
-                     className="hover:text-[#03045e] transition-all duration-300">
-                           Services
-                     </Link>
-                     <Link 
+                     className={({ isActive }) => `
+                         relative
+                         ${isActive 
+                           ?"text-[#03045e]" 
+                           : ""
+                        }
+                     `}
+                     >
+                     {({isActive})=>(
+                        <>
+                          Services
+                            <div className={`
+                               absolute 
+                               left-0 
+                               bottom-0
+                               h-[0.5px]
+                               bg-[#03045e]
+                               transition-all duration-500
+                               ${isActive 
+                                 ? 'w-full'
+                                 : 'w-0'
+                                }
+                              `}
+                             />
+                        </>
+                     )}
+                     </NavLink>
+
+
+                     <NavLink 
                      to="/contact"
-                     className="hover:text-[#03045e] transition-all duration-300">
+                     className={({ isActive }) => `
+                         relative
+                         ${isActive 
+                           ?"text-[#03045e]" 
+                           : ""
+                        }
+                     `}
+                     >
+                     {({isActive})=>(
+                        <>
                           Approach
-                     </Link>
-                     <Link 
+                            <div className={`
+                               absolute 
+                               left-0 
+                               bottom-0
+                               h-[0.5px]
+                               bg-[#03045e]
+                               transition-all duration-500
+                               ${isActive 
+                                 ? 'w-full'
+                                 : 'w-0'
+                                }
+                              `}
+                             />
+                        </>
+                     )}   
+                     </NavLink>
+
+                     <NavLink
                      to="/industries"
-                     className="hover:text-[#03045e] transition-all duration-300">
+                     className={({ isActive }) => `
+                         relative
+                         ${isActive 
+                           ?"text-[#03045e] " 
+                           : ""
+                        }
+                     `}
+                     >
+                     {({isActive})=>(
+                        <>
                            Products
-                     </Link>
-                     <Link 
+                            <div className={`
+                               absolute 
+                               left-0 
+                               bottom-0
+                               h-[0.5px]
+                               bg-[#03045e]
+                               transition-all duration-500
+                               ${isActive 
+                                 ? 'w-full'
+                                 : 'w-0'
+                                }
+                              `}
+                             />
+                        </>
+                     )}   
+                     </NavLink>
+
+                     <NavLink 
                      to="/about"
-                     className="hover:text-[#03045e] transition-all duration-300">
+                     className={({ isActive }) => `
+                          relative
+                         ${isActive 
+                           ?"text-[#03045e]" 
+                           : ""
+                        }
+                     `}
+                     >
+                     {({isActive})=>(
+                        <>
                            About us
-                     </Link>
-                     <Link to='/contact'
+                            <div className={`
+                               absolute 
+                               left-0 
+                               bottom-0
+                               h-[0.5px]
+                               bg-[#03045e]
+                               transition-all duration-500
+                               ${isActive 
+                                 ? 'w-full'
+                                 : 'w-0'
+                                }
+                              `}
+                             />
+                        </>
+                     )}     
+                     </NavLink>
+
+                     <NavLink to='/contact'
                      className="
                         px-8
                         py-2 
                         font-semibold
-                        rounded-xl 
+                        rounded-md 
                         bg-[#03045e]
                         text-white
                         shadow-sm
@@ -202,7 +330,7 @@ const Navbar = () => {
                         "
                      >   
                      Lets talk
-                </Link>
+                </NavLink>
                </ul>
                {/*CTA */}
                

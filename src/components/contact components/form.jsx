@@ -78,7 +78,7 @@ const ContactForm = () =>{
                             <textarea 
                                type="text"
                                name="message"
-                               rows={6} 
+                               rows={2} 
                                className="
                                    p-2 
                                    outline-none 

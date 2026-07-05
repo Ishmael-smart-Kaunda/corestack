@@ -38,7 +38,9 @@ export default function Socials () {
                         </h1>
                         <div 
                            className="
-                             w-fit
+                             w-full
+                             md:w-fit
+                             justify-between
                              flex 
                              gap-5
                              items-center
@@ -114,6 +116,8 @@ export default function Socials () {
                               ">
                            <p 
                               className="
+                                 hidden
+                                 md:block
                                  tracking-wide
                                  uppercase
                                  text-white/80
@@ -121,11 +125,15 @@ export default function Socials () {
                               ">
                               Copy right
                            </p>
-                           <span className="text-sm text-gray-300">
+                           <span className="border-t border-gray-600 flex text-sm text-gray-300">
                               © { new Date().getFullYear()} 
-                              <hr className="text-gray-500" />
-                              CoreStack Solutions. 
-                              All rights reserved.
+                              
+                              <p className="
+                                  mx-2
+                                 ">
+                                 CoreStack Solutions. 
+                                 All rights reserved.
+                               </p>
                            </span>
 
                         </div>

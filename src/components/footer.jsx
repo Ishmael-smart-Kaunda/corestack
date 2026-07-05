@@ -17,7 +17,7 @@ const Footer = ()=> {
   return (
     <footer className="bg-gray-100 text-gray-700 mt-32 px-6">
       <div className="mx-auto max-w-screen-lg pt-16">
-        {/*HEADER PART OF FOOTER... COMPANY LOGO AND CTA */}
+        {/* COMPANY LOGO AND CTA */}
         <header className="
             w-full 
             flex 
@@ -32,7 +32,7 @@ const Footer = ()=> {
             rounded-lg 
             mb-8
             py-6
-            px-8"
+            px-6"
             >
             <Link to="/" className="w-fit space-y-6">
               <figure className="">
@@ -144,35 +144,35 @@ const Footer = ()=> {
                 <Link 
                     to="/" 
                     className="
-                      hover:text-gray-600
+                      hover:text-[#03045e]
                   ">
                     Home
                 </Link>
                 <Link 
                     to="/services" 
                     className="
-                      hover:text-gray-600
+                      hover:text-[#03045e]
                   ">
                  Our Services
                 </Link>
                 <Link 
                     to="/" 
                     className="
-                      hover:text-gray-600
+                      hover:text-[#03045e]
                   "> 
                   Our Solutions
                 </Link>
                 <Link 
                     to="/contact" 
                     className="
-                       hover:text-gray-600
+                       hover:text-[#03045e]
                     ">
                   About Us
                 </Link>
                 <Link 
                     to="/contact" 
                     className="
-                       hover:text-gray-600
+                       hover:text-[#03045e]
                     ">
                      Contact Us
                 </Link>
@@ -195,21 +195,21 @@ const Footer = ()=> {
             <ul className="space-y-5 text-[15px] font-light">
               <li className="flex items-start gap-3">
                 <BsWhatsapp className="mt-1 text-[#03045e]" size={18} />
-                 <a href="tel: +265887914433" className="hover:text-gray-600">
+                 <a href="tel: +265887914433" className="hover:text-[#03045e]">
                   +265 981 457 286
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
                 <FiPhone className="text-[#03045e]" size={18} />
-                <a href="tel:+265887914433" className="hover:text-gray-600">
+                <a href="tel:+265887914433" className="hover:text-[#03045e]">
                   +265 887 914 433
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
                 <FiMail className="text-[#03045e]" size={18} />
-                <a href="mailto:core..." className="hover:text-gray-600">
+                <a href="mailto:core..." className="hover:text-[#03045e]">
                   hello@corestack.com
                 </a>
               </li>
@@ -220,24 +220,29 @@ const Footer = ()=> {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 border-t border-gray-400  p-8">
+        <div className="mt-16 border-t border-gray-400 py-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} 
-               CoreStack Solutions. 
-               All rights reserved.
-            </p>
+            <span className=" flex text-sm text-gray-600">
+              © { new Date().getFullYear()} 
+              
+              <p className="
+                  mx-2
+                  ">
+                  CoreStack Solutions. 
+                  All rights reserved.
+                </p>
+            </span>
 
             <div className="flex gap-6 text-sm text-gray-500">
-              <a href="/privacy-policy" className="hover:text-gray-600">
+              <a href="/privacy-policy" className="hover:text-[#03045e]">
                 Privacy Policy
               </a>
 
-              <a href="/terms-of-service" className="hover:text-gray-600">
+              <a href="/terms-of-service" className="hover:text-[#03045e]">
                 Terms of Service
               </a>
 
-              <a href="/cookies" className="hover:text-gray-600">
+              <a href="/cookies" className="hover:text-[#03045e]">
                 Cookie Policy
               </a>
             </div>

@@ -1,8 +1,15 @@
+import Hero from "../components/about components/hero";
+import Profile from "../components/about components/company profile";
+import AboutUs from "../components/about components/company profile/who are";
 
 
 const About = () => {
     return ( 
-            <h1 className="mx-auto font-bold text-4xl">about</h1>
+            <>
+             <Hero/>
+             <Profile/>
+             
+            </>
     )
 }           
 export default About;

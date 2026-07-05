@@ -46,6 +46,10 @@ const ContactInfor = () =>{
                          className="
                            w-full
                            h-full
+                           flex
+                           flex-col
+                           items-center
+                           md:items-start
                            p-4
                            bg-white
                            rounded-md
@@ -64,6 +68,10 @@ const ContactInfor = () =>{
                          className="
                            w-full
                            h-full
+                           flex
+                           flex-col
+                           items-center
+                           md:items-start
                            p-4
                            bg-white
                            rounded-md
@@ -86,6 +94,10 @@ const ContactInfor = () =>{
                          className="
                            w-full
                            h-full
+                           flex
+                           flex-col
+                           items-center
+                           md:items-start
                            p-4
                            bg-white
                            rounded-md
