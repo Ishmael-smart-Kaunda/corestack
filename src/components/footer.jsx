@@ -136,7 +136,7 @@ const Footer = ()=> {
                  tracking-wider
                  
                  ">
-              Quick links
+              Nav links
             </h3>
 
             <ul className="flex flex-col space-y-4 text-[15px] font-light">

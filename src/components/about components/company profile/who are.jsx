@@ -3,6 +3,7 @@
 const AboutUs = () =>{
        return(
              <section 
+                id="about-us"
                 className="
                   w-full
                   max-w-screen-lg

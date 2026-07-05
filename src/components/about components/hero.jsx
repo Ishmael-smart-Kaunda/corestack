@@ -60,6 +60,7 @@ const Hero = () =>{
                      text-center
                      text-white/80
                      space-y-8
+                     px-3
                      lg:px-8
                      
                   "> 
@@ -67,10 +68,10 @@ const Hero = () =>{
                      className="
                      tracking-widest
                      uppercase
-                     text-[10px]
+                     text-[12px]
 
                      ">
-                     Get To Know Us
+                     CoreStack Solutions
                   </span>
                   <h1 
                      className="
@@ -80,20 +81,20 @@ const Hero = () =>{
                         font-extrabold
                         
                      ">
-                     Let's Begin the Conversation
+                     Simplifying Business Operations
                   </h1>
                   <p 
                      className="
                      text-xl  
                   ">
-                     Building new a model, improving existing operations, or solving 
-                     business challenges starts with a conversation. We're ready to 
-                     understand your goals and help you move forward.
+                      
+                     Learn what drives CoreStack,  how we think, and the principles that 
+                     shape every solution we deliver
 
                </p>
                {/*button for scrolling down */}
                <a 
-                  href="#contact-info"
+                  href="#about-us"
                   className="
                      cursor-pointer
                      px-8
@@ -104,7 +105,7 @@ const Hero = () =>{
                      bg-[#03045e]
                      font-bold
                ">
-                  Start Right Here
+                  Get To Know Us
                </a>
                </div>
              </div>

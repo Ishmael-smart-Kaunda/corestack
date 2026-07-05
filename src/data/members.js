@@ -8,7 +8,7 @@ export default [
                 id:1,
                 img:smart,
                 name:'Ishmael Smart Kaunda',
-                role:'Front-End Engineer',
+                role:'Front-End Engineer | Co-Founder | Finances',
                 description:`
                        As Frontend Engineer, Ishmael 
                        leads the design and 
@@ -26,7 +26,7 @@ export default [
                 id:2,
                 img:smart,
                 name:'Ishmael Smart Kaunda',
-                role:'Front-End Engineer',
+                role:'FullStack Engineer |Co-Founder | Operations ',
                 description:`
                        As Frontend Engineer, Ishmael 
                        leads the design and 

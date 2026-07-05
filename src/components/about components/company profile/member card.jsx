@@ -51,7 +51,7 @@ const Member = ({img, name, role, description, social}) =>{
                     <p className="font-bold">
                     {name}
                     </p>
-                    <p className="font-semibold">
+                    <p className="text-[12px] font-semibold">
                     {role}
                     </p>
                     <p className="">

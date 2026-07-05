@@ -28,25 +28,36 @@ const OurExistence = () =>{
                         md:sticky
                         md:top-30
                         w-full
-                        h-80
+                        h-fit
                         
-                        border
-                        border-black/15
-                        rounded-lg
+                        
+                        
 
                       ">
+                       <figure 
+                         className="
+                            w-full
+                            h-full
+                            rounded-lg
+                            overflow-hidden
+                         ">
+                         <img src="htt ps://i.pinimg.com/1200x/e3/b7/a6/e3b7a62de10c1250f574dbf8240ed0ba.jpg" 
+                              alt="Business growth" 
+                              className="hidden h-80 w-full object-cover opacity-80" 
+                        />
+                      </figure>
                          <h1 
                             className="
                               absolute
-                              -right-3
+                              left-10
                               top-20
 
                               p-4
                               
                               rounded-lg
-                              z-10
+                              z-50
 
-                              bg-[#03045e]
+                              bg-[#03045e] /80
                               text-white
                               font-bold
                               text-3xl
