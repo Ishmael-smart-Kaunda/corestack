@@ -11,7 +11,7 @@ const CTA= ()=> {
               grid-cols-1
               lg:grid-cols-3 
               gap-4 
-              max-w-screen-lg 
+              max-w-[1180px]
               mx-auto 
               bg-[#222831] 
               rounded-md

@@ -22,7 +22,7 @@ const Services = () => {
                     <div 
                          className="
                             w-full
-                            max-w-screen-lg
+                            max-w-[1180px]
                             mx-auto 
                             grid 
                             grid-cols-1 
@@ -41,7 +41,8 @@ const Services = () => {
                         <aside className="hidden col-span-1 
                                     lg:col-span-2 
                                     space-y-9 h-fit
-                                    md:sticky md:top-28 
+                                    md:sticky 
+                                    md:top-28 
                                     self-start 
                                     h-fit
                                     z-0"        

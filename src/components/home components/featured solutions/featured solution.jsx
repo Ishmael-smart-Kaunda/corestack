@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const FeaturedSolutions = () =>{
        return(
             <section className="w-full p-6 md:py-16">
-               <div className="max-w-screen-lg mx-auto">
+               <div className="max-w-[1180px] mx-auto">
                     <header className="w-fit mx-auto text-center space-y-6">
                          <h1 className="text-3xl md:text-4xl font-bold">
                             Featured Solutions

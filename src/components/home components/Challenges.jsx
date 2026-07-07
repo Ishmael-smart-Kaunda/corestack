@@ -24,7 +24,7 @@ const Challenges = () => {
       <div
         className="
           w-full
-          max-w-screen-lg
+          max-w-[1180px]
           mx-auto
           grid
           grid-cols-1

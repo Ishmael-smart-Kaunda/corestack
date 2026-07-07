@@ -28,7 +28,7 @@ const Promise = () => {
       {/* Promise Cards */}
       <div
         className="
-          max-w-6xl
+          max-w-[1180px]
           mx-auto
           mt-16
           grid

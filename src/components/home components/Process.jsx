@@ -30,7 +30,7 @@ const Process = () => {
       <div
         className="
           w-full
-          max-w-screen-xl
+          max-w-[1180px]
           mx-auto
           grid
           grid-cols-1

@@ -16,7 +16,7 @@ import logo from "../assets/logo/logo.png"
 const Footer = ()=> {
   return (
     <footer className="bg-gray-100 text-gray-700 mt-32 px-6">
-      <div className="mx-auto max-w-screen-lg pt-16">
+      <div className="mx-auto max-w-[1180px] pt-16">
         {/* COMPANY LOGO AND CTA */}
         <header className="
             w-full 

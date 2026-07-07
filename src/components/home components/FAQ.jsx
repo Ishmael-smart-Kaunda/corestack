@@ -20,7 +20,7 @@ export default function FAQ(){
                    return(
                          <section className="
                                      w-full 
-                                     max-w-screen-lg 
+                                     max-w-[1180px] 
                                      my-24
                                      mx-auto
                                      px-6
