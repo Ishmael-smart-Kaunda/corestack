@@ -6,17 +6,20 @@ const AboutUs = () =>{
                 id="about-us"
                 className="
                   w-full
-                  max-w-screen-lg
-                  mx-auto
+                  
+                  
                   px-6
                   md:px-0
-                   text-[#393E46]
+                  text-[#1e293b]
+                   
             ">
                <div 
                   className="
+                     max-w-[1180px]
+                     mx-auto
                      grid
                      md:grid-cols-2
-                     gap-4
+                     gap-6
                      my-16
                ">
                  <aside 
@@ -25,7 +28,7 @@ const AboutUs = () =>{
                       h-full
                       
                       rounded-md
-                      space-y-4
+                      space-y-8
                  ">
                   <h1 
                     className="
@@ -35,28 +38,32 @@ const AboutUs = () =>{
                       font-bold 
                      
                     ">
-                     About 
-                     <br/>
-                     <b className="text-[#03045e]">CoreStack</b>
-                     
+                     About CoreStack
                   </h1>
+                  <p className="font-semibold text-[18px]">
+                    Creating Digital Tools That Support Organizations' Operations.
+                  </p>
                   <p 
                     className="
                       text-lg
-                      mt-16
+                      lg:text-[22px]
+                      leading-relaxed
+                      lg:font-light
+                      
                     ">
-                     CoreStack is a business solutions company that partners with 
-                     organizations to identify operational challenges, uncover 
-                     opportunities, and implement technology that creates measurable 
-                     impact. 
+                     CoreStack is a business solutions company that helps organizations solve 
+                     operational challenges through purposeful technology. We work with businesses 
+                     to understand how they operate, identify opportunities for improvement, and 
+                     design digital solutions that simplify processes, strengthen efficiency, and 
+                     support sustainable growth. Every solution we deliver is guided by a clear 
+                     business objective. 
                   </p>
                   <p 
                     className="
                       text-lg
                       
                     ">
-                    We believe technology delivers the most value when it serves 
-                    business goals, not the other way around.
+                    
                   </p>
 
                  </aside>
@@ -69,21 +76,24 @@ const AboutUs = () =>{
                       
                       rounded-md
                       flex
+                      flex-col
+                      justify-end
                  
                  "> 
                     {/*supporting cards container */}
                     <div 
                       className="
                         w-full
-                        m-auto
+                        lg:w-8/10
+                        self-end
                         grid
                         grid-cols-2
                         
                         gap-x-3
                         gap-y-6 
                     ">
-                     <span className="w-full flex flex-col gap-2 shadow-sm border border-black/10 rounded-md bg-white p-3">
-                         <h3 className="font-semibold">
+                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
+                         <h3 className="font-bold text-[#03045e]">
                              Business First
                          </h3>
                          <p className="">
@@ -91,8 +101,8 @@ const AboutUs = () =>{
                          </p>
                      </span>
 
-                     <span className="w-full flex flex-col gap-2 shadow-sm border border-black/10 rounded-md bg-white p-3">
-                         <h3 className="font-semibold">
+                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
+                         <h3 className="font-bold text-[#03045e]">
                              Practical Innovation
                          </h3>
                          <p className="">
@@ -100,8 +110,8 @@ const AboutUs = () =>{
                          </p>
                      </span>
 
-                     <span className="w-full flex flex-col gap-2 shadow-sm border border-black/10 rounded-md bg-white p-3">
-                         <h3 className="font-semibold">
+                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
+                         <h3 className="font-bold text-[#03045e]">
                              Long-Term Partnership
                          </h3>
                          <p className="">

@@ -6,7 +6,7 @@ const Container = () =>{
                <section 
                   className="
                     w-full 
-                    max-w-screen-lg 
+                    max-w-[1180px] 
                     mx-auto
                     grid 
                     md:grid-cols-2

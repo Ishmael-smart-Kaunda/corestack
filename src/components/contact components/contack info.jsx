@@ -21,6 +21,7 @@ const ContactInfor = () =>{
                       w-full
                       py-16
                       px-6
+                      
                       bg-gray-200/50
                       border-t
                       border-2
@@ -30,7 +31,7 @@ const ContactInfor = () =>{
                     <address 
                        className="
                           w-full
-                          max-w-screen-lg
+                          max-w-[1180px]
                           mx-auto
                           not-italic
                           

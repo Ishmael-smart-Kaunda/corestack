@@ -115,7 +115,7 @@ const Navbar = () => {
                   md:flex 
                   items-center
                   justify-between
-                  max-w-screen-lg
+                  max-w-[1180px]
                   mx-auto
                   w-full
                "
@@ -159,7 +159,7 @@ const Navbar = () => {
                      font-semibold
                      text-[14px]
                      tracking-[0.8px]
-                     text-black/70
+                     text-[#1e293b]
                      "
                      >
                      <NavLink 
@@ -226,7 +226,7 @@ const Navbar = () => {
 
 
                      <NavLink 
-                     to="/contact"
+                     to="/approach"
                      className={({ isActive }) => `
                          relative
                          ${isActive 
@@ -256,7 +256,7 @@ const Navbar = () => {
                      </NavLink>
 
                      <NavLink
-                     to="/industries"
+                     to="/projects"
                      className={({ isActive }) => `
                          relative
                          ${isActive 

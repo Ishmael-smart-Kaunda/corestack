@@ -9,10 +9,7 @@ const Profile = ()=> {
            <>
             <AboutUs/>
             <OurDirection/>
-            <OurExistence/>
             
-            <Approach/>
-               <hr className="max-w-screen-lg text-black/20 mx-auto my-8" />
             <WhyUs/>
             <Team/>
         

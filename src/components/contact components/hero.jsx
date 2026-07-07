@@ -29,7 +29,7 @@ const Hero = () =>{
                       w-full 
                       h-[80vh]
                       md:h-full
-                      max-w-screen-lg
+                      max-w-[1180px]
                       flex
                       m-auto
                       bg-radial-[at_50%_75%] from-[#03045e]/80 to-[#000]/30

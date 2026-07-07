@@ -8,7 +8,7 @@ export default [
                 id:1,
                 img:smart,
                 name:'Ishmael Smart Kaunda',
-                role:'Front-End Engineer | Co-Founder | Finances',
+                role:'Front-End Engineer | Co-Founder | Finance',
                 description:`
                        As Frontend Engineer, Ishmael 
                        leads the design and 

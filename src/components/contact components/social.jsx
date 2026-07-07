@@ -10,7 +10,7 @@ export default function Socials () {
                      <div 
                         className="
                            w-full
-                           max-w-screen-lg
+                           max-w-[1180px]
                            mx-auto
                            bg-[#222831] 
                            p-5 

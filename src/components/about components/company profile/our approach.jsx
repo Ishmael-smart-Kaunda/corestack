@@ -6,18 +6,25 @@ const Approach = () =>{
             <section 
                className="
                   w-full
-                  text-[#393E46]   
+                  text-[#1e293b] 
+                  px-6  
               "> 
-                <h1 className=" text-4xl font-bold text-center my-6">
-                     How We Work
-                </h1>
+              <header className="lg:w-6/10 mx-auto text-[20px] space-y-6">
+                    <h1 className=" text-4xl font-bold text-center my-6">
+                        How We Work
+                    </h1>
+                    <p className="text-center ">
+                        
+                    </p>
+              </header>
+                
                 {/*container */}
                 <div 
                   className="
                     w-full
-                    max-w-screen-lg
+                    max-w-[1180px]
                     mx-auto
-                    px-6
+                    
                     mt-24
                     
                     text-lg
@@ -60,7 +67,7 @@ const Approach = () =>{
                                w-full 
                                h-fit 
                                p-4 
-                               border-dotted 
+                               border -dotted 
                                rounded-md 
                                space-y-3 
                                
@@ -82,17 +89,14 @@ const Approach = () =>{
                             01
                         </div>
                         <h1 className="font-bold">
-                            Understand The Business
+                            Understand
                         </h1>
                         <p className="text-black">
-                            Understanding comes before solutions. We begin by learning about 
-                            the business, its goals, operations, challenges, and the environment 
-                            in which it operates.
+                            Every engagement begins with understanding the business. We take time to learn 
+                            how the organization operates, the challenges it faces, and the outcomes it wants 
+                            to achieve before recommending any solution.
                         </p>
-                        <p className="text-black">
-                            This foundation allows us to focus on what matters most rather 
-                            than making assumptions based on technology alone.
-                        </p>
+                        
 
                    </article>
                    <article 
@@ -104,22 +108,20 @@ const Approach = () =>{
                            w-full 
                            h-fit 
                            p-6 border-dotted rounded-md space-y-3 
+                           border
                         ">
                         <div className="size-12 md:self-end flex items-center justify-center p-2 bg-[#03045e] font-bold text-white rounded-full">
                             02
                         </div>
                         <h1 className="font-bold">
-                            Identify Opportunities
+                            Define
                         </h1>
                         <p className="">
-                            Beyond immediate challenges often lie opportunities for efficiency, 
-                            growth, and better customer experiences. We take time to identify 
-                            where meaningful improvements can create lasting value.
+                            We translate business needs into clear solution requirements to ensure 
+                            making recommendation that addresses the right problem and supports a
+                             meaningful business objective.
                         </p>
-                        <p className="">
-                            The objective is not simply to solve problems, but to uncover 
-                            possibilities that support future growth.
-                        </p>
+                        
                    </article>
 
                     
