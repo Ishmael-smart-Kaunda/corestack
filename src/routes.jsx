@@ -6,6 +6,8 @@ import Projects from "./pages/projects";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 
+import NoPageFound from "./pages/undefined";
+
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter(
@@ -22,6 +24,7 @@ const router = createBrowserRouter(
                               
                         ],                    
                        },
-                       {path: "contact", Component: Contact}                    
+                       {path: "contact", Component: Contact},
+                       {path: "*", Component:NoPageFound}                    
                     ]);
 export default router;
