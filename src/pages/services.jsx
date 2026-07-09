@@ -1,8 +1,16 @@
-
+import ServicesCTA from "../components/services components/ServicesCTA";
+import ServicesHero from "../components/services components/ServicesHero";
+import ServicesList from "../components/services components/ServicesList";
+import ValueProposition from "../components/services components/ValueProposition";
 
 const Services = () => {
     return ( 
-            <h1 className="mx-auto font-bold text-4xl">services</h1>
+            <>
+                <ServicesHero />
+                <ServicesList />
+                <ValueProposition />
+                <ServicesCTA />
+            </>
         )
 }   
 export default Services;
