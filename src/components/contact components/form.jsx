@@ -55,8 +55,25 @@ const ContactForm = () =>{
                         </label>
                      </fieldset>
 
-                     
-                        <label htmlFor="subject" className="w-full flex flex-col gap-3 font-semibold">
+                     <fieldset className="flex flex-col md:flex-row gap-3 justify-between">
+                        <label htmlFor="phone" className="w-full md:w-1/2 flex flex-col gap-3 font-semibold">
+                            Phone
+                            <input 
+                               type="text" 
+                               name="subject"
+                               className="
+                                   p-2
+                                   outline-none 
+                                   rounded-md 
+                                   border 
+                                   border-[#393E46]/20
+                                   text-[15px]
+                                   placeholder:text-[#393E46]/80"
+                               placeholder="Your Phone"
+                               
+                            />
+                        </label>
+                        <label htmlFor="subject" className="w-full md:w-1/2 flex flex-col gap-3 font-semibold">
                             Subject
                             <input 
                                type="text" 
@@ -73,6 +90,7 @@ const ContactForm = () =>{
                                
                             />
                         </label>
+                      </fieldset>
                         <label htmlFor="message" className="w-full flex flex-col gap-3 font-semibold">
                             A short message
                             <textarea 

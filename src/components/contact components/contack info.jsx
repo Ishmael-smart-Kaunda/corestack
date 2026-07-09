@@ -19,6 +19,7 @@ const ContactInfor = () =>{
                    id="contact-info"
                    className="
                       w-full
+                      mt-16
                       py-16
                       px-6
                       
