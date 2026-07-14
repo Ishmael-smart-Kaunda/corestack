@@ -9,15 +9,26 @@ const Team = () =>{
                  className="
                     w-full
                     px-6
-                    text-[#393E46]
+                    text-[#191b1c]
+                    my-24  
                 ">
-                    <h1 className="text-4xl font-bold my-6 text-center">Meet Our Team</h1>
+                    <header 
+                       className="
+                          w-full
+                          max-w-[1180px]
+                          mx-auto
+                    ">
+                     <h1 className="text-4xl font-bold my-6 text-[#]">
+                        Meet Our Team
+                    </h1>
+                    </header>
+                    
 
                     {/*container */}
                     <div 
                        className="
                           w-full
-                          max-w-screen-lg
+                          max-w-[1180px]
                           mx-auto
                           grid 
                           md:grid-cols-2 

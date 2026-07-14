@@ -1,6 +1,6 @@
 
 import {Link, NavLink} from "react-router-dom"
-import logo from "../../assets/logo/logo.png"
+import logo from "../../assets/logo/smr.png"
 
 
 
@@ -45,25 +45,13 @@ const Nav = () => {
                               className="
                                  flex 
                                  items-center
-                                 h-full
-                                 border
-                                 border-black/7
-                                 rounded-md
-                                 font-semibold
-
                            ">
                               <img src={logo} 
                                  alt="logo" 
                                  className="
-                                    w-12
+                                    h-[54px]
                               "/>
-                              <figcaption
-                                 className="
-                                 mr-3
-                                 text-[#090040]
-                                 ">
-                                 Corestack Solutions
-                              </figcaption>
+                              
                            </figure>
                            </Link>
                            {/*nav links */}

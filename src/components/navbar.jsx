@@ -1,5 +1,5 @@
 import {Link, NavLink} from "react-router-dom"
-import logo from "../assets/logo/logo.png"
+import logo from "../assets/logo/smr.png"
 import { HiMenu, HiX } from "react-icons/hi";
 import { MdMenu } from "react-icons/md";
 import { HiChevronDown } from "react-icons/hi2";
@@ -44,7 +44,7 @@ const pricesData =[
 const Navbar = () => { 
     
 
-   const [currencies, setCurrencies] = useState({
+   {/*const [currencies, setCurrencies] = useState({
                                        id:'',
                                        currency:''
                                     })
@@ -79,18 +79,19 @@ const Navbar = () => {
          )
          console.log('CURRENCIES', currencies)
   }
-      // TOGGLE MENU BAR
-   const [openMenu, setOpenMenu] = useState(false);
-   const toggleMenu = () =>{
-            setOpenMenu(!openMenu) 
-         }
+     
 
    const [viewPrice, setViewPrice] = useState(false);
    const togglePriceView = () =>{
          setViewPrice(!viewPrice)    
         }
 
-
+   */}
+    // TOGGLE MENU BAR
+   const [openMenu, setOpenMenu] = useState(false);
+   const toggleMenu = () =>{
+            setOpenMenu(!openMenu) 
+         }
 
    return (
           <header 
@@ -129,25 +130,13 @@ const Navbar = () => {
                   className="
                      flex 
                      items-center
-                     h-full
-                     border
-                     border-black/7
-                     rounded-md
-                     font-semibold
-
                ">
                   <img src={logo} 
                      alt="logo" 
                      className="
-                        w-12
+                        h-[50px]
                   "/>
-                  <figcaption
-                     className="
-                     mr-3
-                     text-[#090040]
-                     ">
-                     Corestack Solutions
-                  </figcaption>
+                  
                </figure>
                </Link>
                {/*nav links */}
@@ -297,7 +286,7 @@ const Navbar = () => {
                      >
                      {({isActive})=>(
                         <>
-                           About us
+                           About Us
                             <div className={`
                                absolute 
                                left-0 
@@ -433,7 +422,7 @@ const Navbar = () => {
                     "
                >
                 {/*PRICE OVERVIEW BUTTON */}
-                <button onClick={togglePriceView}
+                <button 
                     className="
                     flex
                     items-center

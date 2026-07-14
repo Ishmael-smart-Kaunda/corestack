@@ -1,6 +1,6 @@
 
 
-const Member = ({img, name, role, description, social}) =>{
+const Member = ({img, alt, name, role, description, social}) =>{
     
     const {Facebook, LinkedIn, Twitter} = social
     
@@ -8,45 +8,41 @@ const Member = ({img, name, role, description, social}) =>{
     return(       
             <article  
                 className="
-                relative  
+                 
                 w-full
                 h-full
-                borde r
-                flex
+                border
+                border-black/10
+                flex 
                 flex-col
                 md:flex-row
-                
-                overflow-hidden
+                gap-6
+                p-4
+                rounded-md
                 
             ">
                 <figure 
                 className="
-                    md:h-80
-                    md:w-6/10
-                    rounded- full
-                    md:rounded-lg
+                    size-15 
+                    border
+                    border-black/10
+                    border-2
+                    bg-gray-300
+                    rounded-full
+                    shrink-0
                     overflow-hidden
-                    bor
+                    
+                
                 ">
                 <img src={img} 
-                        alt="Ishmael Kaunda's Image" 
-                        className="h-full object-cover rounded md: rounded-lg" />
+                     alt={alt} 
+                     className="w-full h-full object-cover" 
+                />
+                
                 </figure>
                 <div 
                     className="
-                    
-                    md:-translate-x-6
-                    md:h-[90%]
-                    my-auto
-                    md:w-6/10
-                    md:shadow
-                    bg-white
-                    md:border
-                    border-black/10
-                    rounded-2xl
-                    py-4
-                    md:px-4
-                    space-y-2
+                    space-y-4
                 ">
                     <p className="font-bold">
                     {name}

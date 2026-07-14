@@ -19,7 +19,8 @@ const AboutUs = () =>{
                      mx-auto
                      grid
                      md:grid-cols-2
-                     gap-6
+                     gap-x-8
+                     gap-y-6
                      my-16
                ">
                  <aside 
@@ -49,6 +50,7 @@ const AboutUs = () =>{
                       lg:text-[22px]
                       leading-relaxed
                       lg:font-light
+                      text-black
                       
                     ">
                      CoreStack is a business solutions company that helps organizations solve 
@@ -73,60 +75,51 @@ const AboutUs = () =>{
                     className="
                       w-full
                       h-full
-                      
-                      rounded-md
                       flex
-                      flex-col
-                      justify-end
-                 
+                      rounded-md 
                  "> 
                     {/*supporting cards container */}
-                    <div 
-                      className="
+                     <div 
+                       className="
                         w-full
-                        lg:w-8/10
+                        m-auto
                         self-end
                         grid
                         grid-cols-2
                         
-                        gap-x-3
-                        gap-y-6 
-                    ">
-                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
-                         <h3 className="font-bold text-[#03045e]">
+                        gap-4
+                        gap-y -6 
+                     ">
+                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
+                         <h3 className="text-[14px]  font-bold text-yellow-600">
                              Business First
                          </h3>
-                         <p className="">
+                         <p className="text-black">
                              Technology decisions guided by business objectives.
                          </p>
-                     </span>
+                      </div>
 
-                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
-                         <h3 className="font-bold text-[#03045e]">
+                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
+                         <h3 className="text-[14px]  font-bold text-yellow-600">
                              Practical Innovation
                          </h3>
-                         <p className="">
+                         <p className="text-black">
                              Solutions designed for real-world operations.
                          </p>
-                     </span>
+                      </div>
 
-                     <span className="space-y-2 shadow-sm shadow-[#03045e]/10 border border-[#03045e]/20 rounded p-3">
-                         <h3 className="font-bold text-[#03045e]">
+                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
+                         <h3 className="text-[14px]  font-bold text-yellow-600">
                              Long-Term Partnership
                          </h3>
-                         <p className="">
+                         <p className="text-black">
                              We grow alongside the businesses we serve.
                          </p>
-                     </span>
-
+                      </div>
                     </div>
-
-                 </aside>
-
-                </div>
-
-
-             </section>
+                  </aside>
+                 </div>
+            </section>
        )
 }
 

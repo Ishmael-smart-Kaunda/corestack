@@ -69,6 +69,7 @@ const Hero = () =>{
                      tracking-widest
                      uppercase
                      text-[12px]
+                     text-yellow-500
 
                      ">
                      CoreStack Solutions

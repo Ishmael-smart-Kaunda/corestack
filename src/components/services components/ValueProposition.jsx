@@ -35,7 +35,7 @@ const values = [
 const ValueProposition = () => {
   return (
     <section className="w-full px-5 md:px-15 py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1180px] mx-auto">
 
         <header className="max-w-3xl text-center mx-auto">
           <span className="uppercase tracking-widest text-primary font-semibold">

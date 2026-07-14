@@ -26,7 +26,7 @@ const ServicesList = () => {
       </header>
 
       {/* Services */}
-      <div className="max-w-7xl mx-auto mt-20">
+      <div className="max-w-[1180px] mx-auto mt-20">
         {services.map((service, index) => (
           <ServiceModule
             key={service.id}

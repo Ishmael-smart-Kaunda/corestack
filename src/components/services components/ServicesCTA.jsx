@@ -6,7 +6,7 @@ const ServicesCTA = () => {
     <section className="w-full px-5 md:px-15 py-24">
       <div
         className="
-          max-w-6xl
+          max-w-[1180px]
           mx-auto
           bg-gradient-to-br
           from-[#03045e]
