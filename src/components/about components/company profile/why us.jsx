@@ -11,9 +11,9 @@ const WhyUs = () =>{
               className="
                 w-full
                 px-6
+                
             ">
-               
-
+              
                 {/*container */}
 
                 <div 
@@ -23,7 +23,7 @@ const WhyUs = () =>{
                      max-w-[1180px]
                      relative
                      min-h-150
-                     overflow-hidden bg-black/90 text-white rounded-lg
+                     overflow-hidden bg-black/90 text-white
                      mx-auto
                      p-3
                      lg:my-24   
@@ -35,7 +35,7 @@ const WhyUs = () =>{
                      {/*bg img */}
                      <img src="https://i.pinimg.com/736x/fb/5b/3a/fb5b3a2fdbe9d32c26dbe0bbfa5111c1.jpg" 
                               alt="corestack team" 
-                              className="absolute inset-0 object-cover w-full mix-blend-overlay"
+                              className="absolute inset-0 object-cover w-full mix-blend-overlay -z-10"
                       />
                   <div className="relative m-auto w-full space-y-24">
                      <header className="text-center space-y-6 text-white/60">
