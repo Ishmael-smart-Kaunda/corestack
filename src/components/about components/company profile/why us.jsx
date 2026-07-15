@@ -22,8 +22,8 @@ const WhyUs = () =>{
                         />
 
                      </div>
-                     <div className="absolute top-1/2 -translate-y-1/2 w-full">
-                           <header className="text-center space-y-6 text-white/60">
+                     <div className="absolute top-1/2 -translate-y-1/2 w-full space-y-24">
+                           <header className="text-center space-y-6 text-white/60 space-y-8">
                               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
                                  Why Choose Us
                               </h1>
