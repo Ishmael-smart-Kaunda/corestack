@@ -22,7 +22,7 @@ const WhyUs = () =>{
                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
                                Why CoreStack
                            </h1>
-                           <h2 className="text-yellow-900 uppercase text-[1rem] mb-12">
+                           <h2 className="text-yellow-600 uppercase text-[1rem] mb-12">
                                A Different Way to Solve Business Challenges
                            </h2>
                            <p className="font-light tracking-wide leading-relaxed">

@@ -57,7 +57,7 @@ const OurDirection = () =>{
                             Our Mission
                         </h1>
                      </header>
-                     <p className="mt-6 text-lg leading-relaxed">
+                     <p className="mt-6 text-[1.2rem] font-light leading-relaxed">
                          To help businesses solve operational challenges through purposeful technology 
                          by delivering practical digital solutions that improve efficiency, simplify 
                          processes, and create measurable value.
@@ -77,7 +77,7 @@ const OurDirection = () =>{
                         </h1>
                       </header>
                      
-                     <p className="mt-4 text-lg leading-relaxed">
+                     <p className="mt-4 text-[1.2rem] font-light leading-relaxed">
                          To become a trusted business solutions partner, helping organizations embrace 
                          technology with confidence and build stronger, more efficient, and future-ready 
                          operations.
@@ -102,7 +102,7 @@ const OurDirection = () =>{
                       my-8
                       
                       text-[16px]
-                      text-yellow-900
+                      text-yellow-600
                       uppercase
                       
                       ">
@@ -142,10 +142,7 @@ const OurDirection = () =>{
                             Simplicity
                           </h1>
                           </header>
-                          <p 
-                            className="
-                                relative
-                            ">
+                          <p className=" font-light text-[1.2rem]">
                             We believe technology should simplify the work.
                           </p>
                         </article>
@@ -172,11 +169,7 @@ const OurDirection = () =>{
                         </header>
                         
                         <p 
-                        className="
-                           
-                           text-red -900 
-                           relative
-                        ">
+                        className="font-light text-[1.2rem]">
                         We value thoughtful execution and attention to the details.
                         </p>
                         </article>
@@ -202,8 +195,7 @@ const OurDirection = () =>{
                             </h1>
                         </header>
                         <p 
-                        className="
-                          relative  
+                        className="font-light text-[1.2rem]
                         ">
                         We understand business needs then propose solution.
                         </p>
@@ -231,8 +223,7 @@ const OurDirection = () =>{
                             </h1>
                         </header>
                         <p 
-                        className="
-                            relative
+                        className="font-light text-[1.2rem]
                         ">
                         We value long-term relationships built on trust.
                         </p>

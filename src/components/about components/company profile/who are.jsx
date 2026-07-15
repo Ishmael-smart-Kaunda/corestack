@@ -37,14 +37,15 @@ const AboutUs = () =>{
                     className="
                       w-fit
                       text-3xl 
-                      md:text-4xl 
+                      md:text-4xl
+                      lg:text-5xl 
                       font-bold 
-                      text-black uppercase
+                      text-black 
                      
                     ">
                      About CoreStack
                   </h1>
-                  <p className="text-yellow-900 uppercase text-[16px]">
+                  <p className="text-black uppercase text-[16px]">
                     Creating Digital Tools That Support Organizations' Operations.
                   </p>
                   <p 
@@ -53,7 +54,7 @@ const AboutUs = () =>{
                       lg:text-[22px]
                       leading-relaxed
                       tracking-wide
-                      lg:font-light
+                      font-light
                       text-black
                       
                     ">
@@ -95,28 +96,28 @@ const AboutUs = () =>{
                         gap-8 
                      ">
                       <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
-                         <h3 className="text-[12px] uppercase  ">
+                         <h3 className="text-[12px] uppercase  text-yellow-600">
                              Business First
                          </h3>
-                         <p className="">
+                         <p className="font-light text-[1.1rem]">
                              Technology decisions guided by business objectives.
                          </p>
                       </div>
 
                       <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
-                         <h3 className="text-[12px] font-normal uppercase ">
+                         <h3 className="text-[12px] font-normal uppercase text-yellow-600">
                              Practical Innovation
                          </h3>
-                         <p className="text-black">
+                         <p className="font-light text-[1.1rem]">
                              Solutions designed for real-world operations.
                          </p>
                       </div>
 
                       <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
-                         <h3 className="text-[12px] uppercase">
+                         <h3 className="text-[12px] uppercase text-yellow-600">
                              Long-Term Partnership
                          </h3>
-                         <p className="text-black">
+                         <p className="font-light text-[1.1rem]">
                              We grow alongside the businesses we serve.
                          </p>
                       </div>

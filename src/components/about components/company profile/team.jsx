@@ -23,7 +23,7 @@ const Team = () =>{
                      <h1 className="text-4xl font-bold my-8 text-[#]">
                         Meet Our Team
                     </h1>
-                    <p className="text-[1.2rem] font-light md:w-7/10">
+                    <p className="text-[1.3rem] font-light md:w-7/10">
                         Behind every solution is a team committed to understanding your business 
                         and solving real challenges. We bring together different skills and 
                         perspectives to design practical technology that supports your goals.

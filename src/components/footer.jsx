@@ -15,59 +15,8 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png"
 const Footer = ()=> {
   return (
-    <footer className="bg-gray-100 text-gray-700 pt-32 px-6">
-      <div className="mx-auto max-w-[1180px] pt-16">
-        {/* COMPANY LOGO AND CTA */}
-        <header className=" hidden
-            w-full 
-            flex 
-            flex-col
-            md:flex-row
-            items-start
-            md:items-center
-            md:justify-between 
-            gap-6 
-            bg-gray-200/80 
-            
-            rounded-lg 
-            mb-8
-            py-6
-            px-6"
-            >
-            <Link to="/" className="w-fit space-y-6">
-              <figure className="">
-                <img
-                   src={logo}
-                   className="w-20 -translate-x-6 translate-y-2"
-                   alt="Company Logo"
-                />
-                <span className="text-2xl font-bold text-[#03045e]">
-                   CoreStack Solutions
-                </span>
-              </figure>
-                <p className="max-w-md text-black  font-light leading-relaxed text-[21px]">
-                  Transforming business operations through 
-                  growth-focused technologies.
-                </p>
-            </Link>
-
-            <button className="
-                   hidden
-                   md:block
-                   cursor-pointer
-                   h-fit 
-                   text-white 
-                   px-12 
-                   py-4 
-                   rounded-xl 
-                   bg-[#03045e] 
-                   shadow-sm 
-                   font-bold
-                   ">
-               Schedule A Session
-            </button>
-           
-        </header>
+    <footer className="bg-gray-200 text-gray-700 py-8 px-6">
+      <div className="mx-auto max-w-[1180px]">
 
         {/** LINKS AND SOCIAL */}
         <div className="grid gap grid-cols-2 lg:grid-cols-4 text-black my-12">
