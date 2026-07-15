@@ -11,74 +11,75 @@ const WhyUs = () =>{
               className="
                 w-full
                 px-6
+                py-24
                 
             ">
-                <div className="relative -z-50 w-full max-w-[1180px] mx-auto  h-[140vh]">
-                     <div className="-z-10 sticky top-15 w-full h-[100vh]  bg-black/90">
-                        {/*bg img */}
-                        <img src="https://i.pinimg.com/736x/fb/5b/3a/fb5b3a2fdbe9d32c26dbe0bbfa5111c1.jpg" 
-                                 alt="corestack team" 
-                                 className="object-cover w-full mix-blend-overlay -z-10"
-                        />
+                <div className="relat -z-50 w-full max-w-[1180px] mx-auto grid md:grid-cols-2 gap-12">
+                     
+                     <header className="space-y-6 text-black h-full space-y-8 text-[1.3rem]">
+                         <div className="w-2/10 h-2 bg-[#03045e] mb-16"/>
 
-                     </div>
-                     <div className="absolute top-1/2 -translate-y-1/2 w-full space-y-24">
-                           <header className="text-center space-y-6 text-white/60 space-y-8">
-                              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
-                                 Why Choose Us
-                              </h1>
-                              <h2 className="">A Different Way to Solve Business Challenges</h2>
-                          </header>
-
+                           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
+                               Why CoreStack
+                           </h1>
+                           <h2 className="text-yellow-900 uppercase text-[1rem] mb-12">
+                               A Different Way to Solve Business Challenges
+                           </h2>
+                           <p className="font-light tracking-wide leading-relaxed">
+                                 Every project is designed to solve a real business challenge, 
+                                 improve efficiency, and support your long-term goals. We 
+                                 believe the best technology is simple to use, practical to 
+                                 maintain, and valuable to the people who rely on it every day.
+                           </p>
+                     </header>
+                     
+                    
                           <div className="
                                  w-full
-                                 grid
-                                 md:grid-cols-2 
-                                 lg:grid-cols-3 
-                                 gap-4                                  
-                                 md:px-6 
+                                 space-y-12 
+                                 text-[1.3rem]                                
+                                 
                            "> 
                             <article 
                              className="
                               w-full
-                              text-lg
+                              
                               space-y-6
-                              border
-                              border-black/10 
-                              text-white/50
-                              bg-[#03045e]/20
-                              backdrop-blur-[2px]
-                              px-6
-                              py-2
+                              border-b
+                              border-gray-600
+                              pb-4
+                              space-y-6
+                              tracking -wide
+                              
                            ">
-                           <h2 className="font-bold text-yellow-500/70">
-                                Business Bofore Technology
+                           <h2 className="">
+                               <b className="mr-4 font-normal">01</b> Business-First Approach
                            </h2>
-                           <p className="leading-relaxed">
-                                Before recommending a solution, we take time to understand the business, 
-                                its processes, and the challenges it is trying to solve.
+                           <p className="font-light">
+                                We start with your business, not the technology. By understanding your 
+                                processes and objectives, we deliver solutions that 
+                                address real operational needs.
                            </p>  
                         </article>
+                        
                               
                         <article 
                            className="
                               w-full
-                              text-lg
+                              
                               space-y-6
-                              border
-                              border-black/10 
-                           
-                              text-white/50
-                              bg-[#03045e]/20
-                              backdrop-blur-[2px]
-                              px-6
-                              py-2
+                              border-b
+                              border-gray-600
+                              pb-4
+                              space-y-6
+                              tracking-wide
+                              leading-relaxed
                            ">
-                           <h2 className="font-bold text-yellow-500/70">
+                           <h2 className="">
                                  
-                                 Tailored Solutions
+                               <b className="mr-4 font-normal">02</b>  Tailored Solutions
                            </h2>
-                           <p className="">
+                           <p className="font-light">
                               
                               Our solutions are designed around 
                               existing business processes so they naturally become part of daily 
@@ -110,26 +111,26 @@ const WhyUs = () =>{
                         <article 
                            className="
                               w-full
-                              text-lg
+                              
                               
                               space-y-6
-                              
-                              text-white/50
-                              bg-[#03045e]/20
-                              backdrop-blur-[2px]
-                              px-6
-                              py-2
+                              border-b
+                              border-gray-600
+                              pb-4
+                              space-y-6
+                              tracking-wide
+                              leading-relaxed
                            ">
-                           <h2 className="font-bold text-yellow-500/70">
-                              Lasting Partnership
+                           <h2 className="">
+                              <b className="mr-4 font-normal">03</b> Long-Term Partnership
                            </h2>
-                           <p className="">
+                           <p className="font-light">
                               After delivery, we continue supporting our clients as their businesses evolve.
                            </p>
                         </article>
                      </div> 
 
-                     </div>
+                     
                 </div>
                 {/*container */}
             </section>

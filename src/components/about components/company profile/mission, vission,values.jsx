@@ -6,6 +6,8 @@ import { FaHandshake } from "react-icons/fa6";
 import { GiBulb, GiTargeted } from "react-icons/gi";
 import { IoBulb, IoBulbSharp, IoSparkles } from "react-icons/io5";
 import { LiaLightbulb, LiaLightbulbSolid } from "react-icons/lia";
+import { LuRocket, LuUsers } from "react-icons/lu";
+import { MdRocket } from "react-icons/md";
 import { SiSimpleicons, SiSimplex } from "react-icons/si";
 import { TbBulb, TbTargetArrow } from "react-icons/tb";
 
@@ -27,7 +29,7 @@ const OurDirection = () =>{
                      w-full
                      max-w-[1180px]
                      mx-auto
-                     text-[#1e293b]
+                     text-black [#1e293b]
 
                 ">
 
@@ -37,24 +39,25 @@ const OurDirection = () =>{
                      grid
                      md:grid-cols-2
                      gap-6
+                     md:gap-0
                      font-normal
-                     
+                     tracking-wide
                 ">
                  <aside 
                    className="
                      w-full
-                     
+                     text-black
                   "> 
-                  <article className="h-full shadow-sm shadow-[#03045e]/10 border border-[#03045e]/8 rounded p-6">
+                  <article className="h-full border border-[#03045e]/8 p-6">
                      <header className="flex items-center gap-3">
-                        <div className="p-1 rounded bg-[#03045e] text-[#f8fafc]">
-                            <TbTargetArrow className="size-8"/>
-                        </div>
-                        <h1 className="text-3xl md:tex t-4xl font-bold text-[#03045e]">
+                        {/*<div className="hidden  text-yellow-800 [#f8fafc]">
+                            <TbTargetArrow className="size-12"/>
+                        </div>*/}
+                        <h1 className="text-3xl md:tex t-4xl font-bold text-black yellow-800 -[#03045e]">
                             Our Mission
                         </h1>
                      </header>
-                     <p className="mt-6 text-lg">
+                     <p className="mt-6 text-lg leading-relaxed">
                          To help businesses solve operational challenges through purposeful technology 
                          by delivering practical digital solutions that improve efficiency, simplify 
                          processes, and create measurable value.
@@ -63,18 +66,18 @@ const OurDirection = () =>{
 
                 </aside>
 
-                <aside className="">
-                    <article className="h-full shadow-sm shadow-[#03045e]/10 border border-[#03045e]/8 rounded p-6">
+                <aside className="text-black">
+                    <article className="h-full border border-[#03045e]/8 p-6">
                       <header className="flex items-center gap-3">
-                        <div className="p-1 rounded bg-[#03045e] text-[#f8fafc]">
-                            <TbBulb className="size-8"/>
-                        </div>
-                        <h1 className="text-3xl md:tex t-4xl font-bold text-[#03045e]">
+                        {/*<div className="hidden text-yellow-800 -[#f8fafc]">
+                            <TbBulb className="size-12"/>
+                        </div>*/}
+                        <h1 className="text-3xl md:tex t-4xl font-bold  -yellow-800 -[#03045e]">
                             Our Vision
                         </h1>
                       </header>
                      
-                     <p className="mt-4 text-lg">
+                     <p className="mt-4 text-lg leading-relaxed">
                          To become a trusted business solutions partner, helping organizations embrace 
                          technology with confidence and build stronger, more efficient, and future-ready 
                          operations.
@@ -90,15 +93,17 @@ const OurDirection = () =>{
 
                 {/*core values */}
                   <h1 className="text-3xl center mt-24 md:text-4xl font-bold">
-                      Our Core Values
+                      Our Values
                   </h1>
                   <p 
                      className="
                       text -center 
                       tracking- [0.1rem] 
-                      my-4 
-                      font-semibold
-                      text-[18px]
+                      my-8
+                      
+                      text-[16px]
+                      text-yellow-900
+                      uppercase
                       
                       ">
                      What Drives Our Company Forward
@@ -123,42 +128,26 @@ const OurDirection = () =>{
                             p-3
                             lg:p-6
                             border
-                            rounded
+                            
                             border-black/10
                             h-full
                             space-y-3
                         "
                         >
                         <header className="flex flex-col lg:flex-row lg:items-center gap-3 text-[18px]">
-                            <span className="w-fit p-2 rounded bg-[#03045e] text-white">
+                            <span className="w-fit rounded bg -[#03045e] text- white">
                                 <BsLayers size={20}/>
                             </span>
-                            <h1 className="font-bold">
+                            <h1 className="font-semibold">
                             Simplicity
-                        </h1>
-                        </header>
-                        
-                        
-                        <p 
-                        className="
-                            relative
-                        ">
-                        We believe technology should simplify the work.
-                        </p>
-                       
-
-                        <div 
-                            className=" hidden
-                            absolute
-                            inset-0 
-                            p-[2px]
-                            bg-black/20   
-                        "
-                          style={{
-                                clipPath: "polygon(0 40%, 30% 38%, 100% 40%, 30% 100%, 0 100%)",
-                            }}>
-                            
-                        </div>
+                          </h1>
+                          </header>
+                          <p 
+                            className="
+                                relative
+                            ">
+                            We believe technology should simplify the work.
+                          </p>
                         </article>
 
                         <article 
@@ -168,16 +157,16 @@ const OurDirection = () =>{
                             p-3
                             lg:p-6
                             border
-                            rounded
+                            
                             border-black/10
                             h-full
                             space-y-3
                         ">
                         <header className="flex flex-col lg:flex-row lg:items-center gap-3 text-[18px]">
-                            <span className="w-fit p-2 rounded bg-[#03045e] text-white">
+                            <span className="w-fit  ">
                                 <BsTrophy size={20}/>
                             </span>
-                            <h1 className="font-bold">
+                            <h1 className="font-semibold">
                             Excellence
                         </h1>
                         </header>
@@ -190,20 +179,6 @@ const OurDirection = () =>{
                         ">
                         We value thoughtful execution and attention to the details.
                         </p>
-                        
-
-                        <div 
-                            className=" hidden
-                            absolute
-                            bottom-0
-                            left-0
-                            p-[16px]
-                            bg-[#03045e]/20
-                            rounded-tr-full
-                            z-50
-                        ">
-                            
-                        </div>
                         </article>
 
                             <article 
@@ -213,16 +188,16 @@ const OurDirection = () =>{
                             p-3
                             lg:p-6
                             border
-                            rounded
+                            
                             border-black/10
                             h-full
                             space-y-3
                         ">
                         <header className="flex flex-col lg:flex-row lg:items-center gap-3 text-[18px]">
-                            <span className="w-fit p-2 rounded bg-[#03045e] text-white">
-                                <BsRocket size={20}/>
+                            <span className="">
+                                <LuRocket size={20}/>
                             </span>
-                            <h1 className="font-bold">
+                            <h1 className="font-semibold">
                                Innovation
                             </h1>
                         </header>
@@ -232,20 +207,6 @@ const OurDirection = () =>{
                         ">
                         We understand business needs then propose solution.
                         </p>
-                        
-
-                        <div 
-                            className=" hidden
-                            absolute
-                            bottom-0
-                            right-0
-                            p-[16px]
-                            bg-[#03045e]/20
-                            rounded-tl-full
-
-                        ">
-                            
-                        </div>
                         </article>
 
                         <article 
@@ -255,17 +216,17 @@ const OurDirection = () =>{
                             p-3
                             lg:p-6
                             border
-                            rounded
+                            
                             border-black/10
                             h-full
                             space-y-3
 
                         ">
                         <header className="flex flex-col lg:flex-row lg:items-center gap-3 text-[18px]">
-                            <span className="w-fit bg-[#03045e] p-2 rounded text-[#f8fafc]">
-                                <FaUsers size={20}/>
+                            <span className="w-fit ">
+                                <LuUsers size={20}/>
                             </span>
-                            <h1 className="font-bold">
+                            <h1 className="font-semibold">
                                Partnership
                             </h1>
                         </header>
@@ -275,25 +236,6 @@ const OurDirection = () =>{
                         ">
                         We value long-term relationships built on trust.
                         </p>
-                        
-
-                        <div 
-                            className=" hidden
-                            absolute
-                            inset-0
-                            w-full
-                            p-[65px]
-                            bg-black/20
-                            clip-card
-                        "
-                        style={{
-                                clipPath: "polygon(0 0, 30% 0, 90% 40%, 30% 100%, 0 100%)",
-                            }}
-                        
-                        
-                        >
-                           
-                        </div>
                         </article>
 
                        

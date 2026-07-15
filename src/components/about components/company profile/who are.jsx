@@ -22,7 +22,8 @@ const AboutUs = () =>{
                      md:grid-cols-2
                      gap-x-8
                      gap-y-6
-                     p-16
+                     py-16
+                     
                ">
                  <aside 
                     className="
@@ -38,11 +39,12 @@ const AboutUs = () =>{
                       text-3xl 
                       md:text-4xl 
                       font-bold 
+                      text-black uppercase
                      
                     ">
                      About CoreStack
                   </h1>
-                  <p className="font-semibold text-[18px]">
+                  <p className="text-yellow-900 uppercase text-[16px]">
                     Creating Digital Tools That Support Organizations' Operations.
                   </p>
                   <p 
@@ -50,6 +52,7 @@ const AboutUs = () =>{
                       text-lg
                       lg:text-[22px]
                       leading-relaxed
+                      tracking-wide
                       lg:font-light
                       text-black
                       
@@ -88,20 +91,20 @@ const AboutUs = () =>{
                         grid
                         grid-cols-2
                         
-                        gap-4
-                        gap-y -6 
+                        gap -4
+                        gap-8 
                      ">
-                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
-                         <h3 className="text-[14px]  font-bold text-yellow-600">
+                      <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
+                         <h3 className="text-[12px] uppercase  ">
                              Business First
                          </h3>
-                         <p className="text-black">
+                         <p className="">
                              Technology decisions guided by business objectives.
                          </p>
                       </div>
 
-                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
-                         <h3 className="text-[14px]  font-bold text-yellow-600">
+                      <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
+                         <h3 className="text-[12px] font-normal uppercase ">
                              Practical Innovation
                          </h3>
                          <p className="text-black">
@@ -109,8 +112,8 @@ const AboutUs = () =>{
                          </p>
                       </div>
 
-                      <div className="space-y-2 shadow-sm shadow-yellow-500/20 border border-black/10 rounded px-5 py-2">
-                         <h3 className="text-[14px]  font-bold text-yellow-600">
+                      <div className="border-b border-gray-600 text-black pb-6 space-y-4 tracking-wide">
+                         <h3 className="text-[12px] uppercase">
                              Long-Term Partnership
                          </h3>
                          <p className="text-black">
