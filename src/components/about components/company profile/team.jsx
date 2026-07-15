@@ -10,7 +10,8 @@ const Team = () =>{
                     w-full
                     px-6
                     text-[#191b1c]
-                    my-24  
+                    py-24 
+                    bg-white 
                 ">
                     <header 
                        className="

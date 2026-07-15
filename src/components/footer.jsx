@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png"
 const Footer = ()=> {
   return (
-    <footer className="bg-gray-100 text-gray-700 mt-32 px-6">
+    <footer className="bg-gray-100 text-gray-700 pt-32 px-6">
       <div className="mx-auto max-w-[1180px] pt-16">
         {/* COMPANY LOGO AND CTA */}
         <header className=" hidden

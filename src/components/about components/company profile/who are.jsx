@@ -11,6 +11,7 @@ const AboutUs = () =>{
                   px-6
                   md:px-0
                   text-[#1e293b]
+                  bg-gray-100
                    
             ">
                <div 
@@ -21,7 +22,7 @@ const AboutUs = () =>{
                      md:grid-cols-2
                      gap-x-8
                      gap-y-6
-                     my-16
+                     p-16
                ">
                  <aside 
                     className="

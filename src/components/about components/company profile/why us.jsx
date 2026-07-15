@@ -13,49 +13,33 @@ const WhyUs = () =>{
                 px-6
                 
             ">
-              
-                {/*container */}
+                <div className="relative -z-50 w-full max-w-[1180px] mx-auto  h-[140vh]">
+                     <div className="-z-10 sticky top-15 w-full h-[100vh]  bg-black/90">
+                        {/*bg img */}
+                        <img src="https://i.pinimg.com/736x/fb/5b/3a/fb5b3a2fdbe9d32c26dbe0bbfa5111c1.jpg" 
+                                 alt="corestack team" 
+                                 className="object-cover w-full mix-blend-overlay -z-10"
+                        />
 
-                <div 
-                  className="
-                     
-                     w-full
-                     max-w-[1180px]
-                     relative
-                     min-h-150
-                     overflow-hidden bg-black/90 text-white
-                     mx-auto
-                     p-3
-                     lg:my-24   
-                      
-                     text-[#191b1c]   
-                     flex
-                                    
-                  ">
-                     {/*bg img */}
-                     <img src="https://i.pinimg.com/736x/fb/5b/3a/fb5b3a2fdbe9d32c26dbe0bbfa5111c1.jpg" 
-                              alt="corestack team" 
-                              className="absolute inset-0 object-cover w-full mix-blend-overlay -z-10"
-                      />
-                  <div className="relative m-auto w-full space-y-24">
-                     <header className="text-center space-y-6 text-white/60">
-                           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
-                              Why Choose Us
-                           </h1>
-                           <h2 className="">A Different Way to Solve Business Challenges</h2>
-                     </header>
+                     </div>
+                     <div className="absolute top-1/2 -translate-y-1/2 w-full">
+                           <header className="text-center space-y-6 text-white/60">
+                              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold ">
+                                 Why Choose Us
+                              </h1>
+                              <h2 className="">A Different Way to Solve Business Challenges</h2>
+                          </header>
 
-                      <div className="
-                           w-full
-                           grid
-                           md:grid-cols-2 
-                           lg:grid-cols-3 
-                           gap-4 
-                            
-                           md:px-6 
+                          <div className="
+                                 w-full
+                                 grid
+                                 md:grid-cols-2 
+                                 lg:grid-cols-3 
+                                 gap-4                                  
+                                 md:px-6 
                            "> 
-                        <article 
-                           className="
+                            <article 
+                             className="
                               w-full
                               text-lg
                               space-y-6
@@ -68,11 +52,11 @@ const WhyUs = () =>{
                               py-2
                            ">
                            <h2 className="font-bold text-yellow-500/70">
-                              Business Bofore Technology
+                                Business Bofore Technology
                            </h2>
                            <p className="leading-relaxed">
-                              Before recommending a solution, we take time to understand the business, 
-                              its processes, and the challenges it is trying to solve.
+                                Before recommending a solution, we take time to understand the business, 
+                                its processes, and the challenges it is trying to solve.
                            </p>  
                         </article>
                               
@@ -144,8 +128,10 @@ const WhyUs = () =>{
                            </p>
                         </article>
                      </div> 
-                    </div>
-                  </div>
+
+                     </div>
+                </div>
+                {/*container */}
             </section>
       )
 }
