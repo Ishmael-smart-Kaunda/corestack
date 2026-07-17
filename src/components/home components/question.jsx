@@ -36,7 +36,7 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                         
                                         p-3
                                         `}>
-                                    <div className={`${id===isExpanded ? 'h-65 md:h-40 lg:h-30 ' : 'h-15'} w-full tracking-wide  transition-all duration-500 overflow-hidden space-y-4`}>
+                                    <div className={`${id===isExpanded ? 'h-65 md:h-40 lg:h-30 ' : 'h-14 lg:h-10'} w-full tracking-wide  transition-all duration-500 overflow-hidden space-y-4`}>
                                             <h3 className={` text-[1.2rem]`}>
                                              {Q}
                                              </h3>

@@ -83,8 +83,8 @@ const Challenges = () => {
             "
           >
             See What We Offer
-           <span className="p-2 bg-[#03045e] rounded-full group-hover:translate-x-1 transition-transform duration-300 ">
-                <LuArrowRight className="text-white rotate-25" />
+           <span className="p-2 bg-[#03045e] rounded-full group-hover:rotate-45 transition-transform duration-1000 ">
+                <LuArrowRight className="text-white group-hover: " />
            </span>
             
           </a>

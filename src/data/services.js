@@ -1,8 +1,15 @@
-
+import {
+  LuWorkflow,
+  LuWaypoints,
+  LuShoppingBag,
+  LuLayoutDashboard,
+  LuShieldCheck,
+  LuSearchCheck,
+} from "react-icons/lu";
 import { FiShield } from "react-icons/fi";
 import { HiOutlineShoppingBag, HiOutlineShoppingCart } from "react-icons/hi2";
 import { RiGlobalLine, RiShieldCheckFill, RiShieldCheckLine , RiShoppingBag2Line, RiShoppingBagFill, RiShoppingCart2Fill, RiShoppingCart2Line} from "react-icons/ri";
-import { LuWorkflow } from "react-icons/lu";
+
 import { TbWorldSearch } from "react-icons/tb";
 export default [
   {
@@ -18,11 +25,11 @@ export default [
     "businessImpact": "Reduce manual effort, improve accuracy, and increase operational efficiency.",
     "cta": "Explore Solution"
   },
-  {
+   {
     "id": 2,
-    "icon": RiGlobalLine,
-    "title": "Web Platforms & Digital Experiences",
-    "description": "Build professional digital touchpoints that strengthen customer trust, engagement, and business credibility.",
+    "icon": LuWaypoints,
+    "title": "Digital Transformation Consultancy",
+    "description": "",
     "deliverables": [
       "Corporate Websites",
       "Customer Portals",
@@ -31,9 +38,10 @@ export default [
     "businessImpact": "Improve customer experience and establish a stronger digital presence.",
     "cta": "Explore Solution"
   },
+  
   {
     "id": 3,
-    "icon": RiShoppingCart2Line,
+    "icon": LuShoppingBag,
     "title": "E-Commerce Solutions",
     "description": `Sell products and services online through 
                     secure, scalable, and user-friendly 
@@ -48,7 +56,20 @@ export default [
   },
   {
     "id": 4,
-    "icon":  RiShieldCheckLine ,
+    "icon": LuLayoutDashboard,
+    "title": "Custom Digital Platforms",
+    "description": "Build professional digital touchpoints that strengthen customer trust, engagement, and business credibility.",
+    "deliverables": [
+      "Corporate Websites",
+      "Customer Portals",
+      "Booking & Service Platforms"
+    ],
+    "businessImpact": "Improve customer experience and establish a stronger digital presence.",
+    "cta": "Explore Solution"
+  },
+  {
+    "id": 4,
+    "icon":  LuShieldCheck ,
     "title": "System Maintenance & Technical Support",
     "description": "Ensure business systems remain secure, reliable, updated, and continuously available for daily operations.",
     "deliverables": [
@@ -61,9 +82,9 @@ export default [
   },
   {
     "id": 5,
-    "icon": TbWorldSearch,
-    "title": "Search Optimization & Online Visibility",
-    "description": "Improve discoverability across search engines and AI assistants through strategic SEO and AEO implementation.",
+    "icon": LuSearchCheck,
+    "title": "Online Visibility Optimization",
+    "description": "Improve your business's online presence so potential customers can discover, trust, and engage with your brand more easily.",
     "deliverables": [
       "SEO Strategy",
       "AEO Optimization",
