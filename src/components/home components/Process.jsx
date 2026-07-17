@@ -77,7 +77,7 @@ const Process = () => {
             mx-auto
             rounded-full
             bg-primary
-            text-black/70
+            text-blue-600
             font-semibold
             hover:scale-105
             hover:shadow-lg

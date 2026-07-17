@@ -84,7 +84,7 @@ const Promise = () => {
             border-blue-600/20
             rounded-full
             bg-primary
-            text-black/70
+            text-[#03045e]
             font-semibold
             hover:shadow-xl
             hover:scale-105
