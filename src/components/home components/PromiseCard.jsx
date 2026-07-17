@@ -9,7 +9,7 @@ const PromiseCard = ({ label, icon, title, description }) => {
         w-full
         bg-white
         border
-        border-[#03045e]/10
+        border-blue-600/10
         rounded-md
         shadow-sm
         shadow-[#03045e]/10
@@ -29,7 +29,8 @@ const PromiseCard = ({ label, icon, title, description }) => {
           <span
             className="
               text-sm
-              font-semibold
+              text-yellow-600
+              
               uppercase
               tracking-wider
               text-primary

@@ -14,7 +14,7 @@ const WhyUs = () =>{
                 py-24
                 
             ">
-                <div className="relat -z-50 w-full max-w-[1180px] mx-auto grid md:grid-cols-2 gap-12">
+                <div className=" w-full max-w-[1180px] mx-auto grid md:grid-cols-2 gap-12">
                      
                      <header className="space-y-6 text-black h-full space-y-8 text-[1.3rem]">
                          <div className="w-2/10 h-2 bg-[#03045e] mb-16"/>

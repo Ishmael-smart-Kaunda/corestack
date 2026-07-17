@@ -9,7 +9,7 @@ const AboutUs = () =>{
                   
                   
                   px-6
-                  md:px-0
+                  
                   text-[#1e293b]
                   bg-gray-100
                    
@@ -50,10 +50,10 @@ const AboutUs = () =>{
                   </p>
                   <p 
                     className="
-                      text-lg
+                      text-[1.3rem]
                       lg:text-[22px]
                       leading-relaxed
-                      tracking-wide
+                      
                       font-light
                       text-black
                       

@@ -42,13 +42,9 @@ const OurDirection = () =>{
                      md:gap-0
                      font-normal
                      tracking-wide
-                ">
-                 <aside 
-                   className="
-                     w-full
                      text-black
-                  "> 
-                  <article className="h-full border border-[#03045e]/8 p-6">
+                ">
+                  <article className="h-full border border-[#03045e]/8 p-4">
                      <header className="flex items-center gap-3">
                         {/*<div className="hidden  text-yellow-800 [#f8fafc]">
                             <TbTargetArrow className="size-12"/>
@@ -63,11 +59,8 @@ const OurDirection = () =>{
                          processes, and create measurable value.
                      </p>
                   </article>
-
-                </aside>
-
-                <aside className="text-black">
-                    <article className="h-full border border-[#03045e]/8 p-6">
+                
+                    <article className="h-full border border-[#03045e]/8 p-4">
                       <header className="flex items-center gap-3">
                         {/*<div className="hidden text-yellow-800 -[#f8fafc]">
                             <TbBulb className="size-12"/>
@@ -83,7 +76,7 @@ const OurDirection = () =>{
                          operations.
                      </p>
                   </article>
-                </aside>
+                
 
                 </div>
 
@@ -114,9 +107,9 @@ const OurDirection = () =>{
                         
                         
                         grid
-                        grid-cols-2
+                        
                         md:grid-cols-4
-                        lg:grid- cols-5
+                        
                         gap-4
                         md:max -h-40
                         mt-16

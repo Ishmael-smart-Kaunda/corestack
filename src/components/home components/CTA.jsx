@@ -4,7 +4,7 @@ import { RiArrowRightCircleLine } from "react-icons/ri";
 
 const CTA= ()=> {
   return (
-    <section className="g-gray-900 p-6">
+    <section className="g-gray-900 p-6 hidden">
       <div className="
               relative 
               grid 
@@ -13,21 +13,21 @@ const CTA= ()=> {
               gap-4 
               max-w-[1180px]
               mx-auto 
-              bg-[#222831] 
+              bg- [#222831] 
               rounded-md
               md:rounded-xl 
               overflow-hidden 
               p-4 
               md:p-8 
-              
+              border
               ">
         
         <div className="lg:col-span-2  space-y-8">
-            <h2 className="mt-6 text-3xl lg:text-4xl font-extrabold leading-tight text-white md:text-5xl">
+            <h2 className="mt-6 text-3xl lg:text-4xl font-extrabold leading-tight md:text-5xl">
               Ready To Moderenize Your Operations?
             </h2>
 
-            <p className="mt-6 text-lg text-blue-100">
+            <p className="mt-6 text-lg">
               Whether you need an online store, process automation, or a custom
               business platform, we help organisations identify opportunities
               and implement technology that delivers measurable results.

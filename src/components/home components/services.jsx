@@ -5,16 +5,20 @@ import ServicesCard from "./services card";
 import { Link } from "react-router-dom";
 const Services = () => {
         return(
-               <section className="w-full px-5 md:px-15 py-10 bg -gray-100/50">
+               <section id="our-services" className="w-full px-5 md:px-15 py-10 bg -gray-100/50">
                      <header className="mt-12 w-fit mx-auto text-center space-y-6">
                           {/*metadata */}
-                          <span className="uppercase font-semibold text-[#03045e] tracking-wide">
+                          <span className="hidden uppercase font-semibold text-[#03045e] tracking-wide">
                              what we do
                           </span>
-                          <h2 className="text-3xl md:text-4xl font-bold my-3">
+                          <h1 className="text-3xl md:text-5xl font-bold my-3">
                                   Our Services
+                         </h1>
+                         <h2 className="text-center mx-auto text-yellow-600 text-[0.9rem] uppercase my-8">
+                             Digital solutions designed around your business
                          </h2>
-                        <p className="w-full   text-lg font-semibold text-black/80 tracking-[0.3px] lg:text-xl">
+                          
+                        <p className="hidden w-full   text-[1.3rem] font-light  tracking-wide">
                             Transforming business challenges into opportunities 
                             through purposeful digital innovations.
                         </p>
@@ -24,6 +28,11 @@ const Services = () => {
                             w-full
                             max-w-[1180px]
                             mx-auto 
+                            bg-gray-100
+                            p-4
+                            md:p-6
+                            lg:p-12
+                            rounded-4xl
                             grid 
                             grid-cols-1 
                             md:grid-cols-2 

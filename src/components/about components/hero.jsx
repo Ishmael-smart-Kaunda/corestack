@@ -7,10 +7,12 @@ const Hero = () =>{
                <section 
                   className="
                      w-full 
-                     h-[100vh] 
+                     h
                      md:h-[90vh] 
+                     md:max-h-150
+                     lg:h-[90vh]
                      py-8
-                     mt-12
+                     mt-15
                      flex
                      px-6
                ">
@@ -22,7 +24,7 @@ const Hero = () =>{
                       md:rounded-xl
                       overflow-hidden
                       w-full 
-                      h-[80vh]
+                      h-
                       md:h-full
                       max-w-[1180px]
                       flex
@@ -41,6 +43,7 @@ const Hero = () =>{
                      h-full
                      object-cover
                      mix-blend-overlay
+                     
 
                   " 
                 />
@@ -49,8 +52,6 @@ const Hero = () =>{
                 {/*content */}
                <div 
                   className="
-                     
-                     
                      relative
                      flex
                      flex-col
@@ -62,6 +63,7 @@ const Hero = () =>{
                      space-y-8
                      px-3
                      lg:px-8
+                     py-8
                      
                   "> 
                   <span 
@@ -71,6 +73,7 @@ const Hero = () =>{
                      text-[12px]
                      text-yellow-500
 
+                     hidden
                      ">
                      CoreStack Solutions
                   </span>
@@ -87,16 +90,14 @@ const Hero = () =>{
                   <p 
                      className="
                      text-xl  
-                  ">
-                      
+                  ">                     
                      Learn what drives CoreStack,  how we think, and the principles that 
                      shape every solution we deliver
-
                </p>
                {/*button for scrolling down */}
                <a 
                   href="#about-us"
-                  className="
+                  className=" hidden
                      cursor-pointer
                      px-8
                      shadow

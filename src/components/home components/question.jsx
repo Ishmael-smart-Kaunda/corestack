@@ -15,7 +15,7 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                      className=
                                         {`${id===isExpanded 
                                           ? 
-                                          'bg-gray-100' 
+                                          'text-yellow-600' 
                                           : ''
                                          } 
                                           transition-all 
@@ -24,22 +24,20 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                         cursor-pointer 
                                         w-full
                                         flex 
-                                        flex -col 
-                                        md:f lex-row 
                                         justify-between 
                                         gap-4 
                                         my-4 
                                         items-center  
                                         border 
-                                        border-black/5 
+                                        border-blue-600/20 
                                         rounded-sm 
-                                        shadow-sm
-                                        shadow-black/10 
+                                        
+                                        
                                         
                                         p-3
                                         `}>
-                                    <div className={`${id===isExpanded ? 'h-65 md:h-30 ' : 'h-10'} transition-all duration-500 overflow-hidden space-y-4`}>
-                                            <h3 className="font-semibold text-[14px]">
+                                    <div className={`${id===isExpanded ? 'h-65 md:h-40 lg:h-30 ' : 'h-15'} w-full tracking-wide  transition-all duration-500 overflow-hidden space-y-4`}>
+                                            <h3 className={` text-[1.2rem]`}>
                                              {Q}
                                              </h3>
                                             <p className={
@@ -47,12 +45,14 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                                   ? 
                                                   'opacity-100' 
                                                   : 'opacity-0'} 
+                                                  text-black
                                                   transition-all
                                                   tracking-2 
-                                                  text-[12px]
+                                                  text-[1.1rem]
+                                                  font-light
                                                   duration-500 
-                                                  text-[#202940]
-                                                  font-semibold 
+                                                  
+                                                  
                                                   opacity 
                                                   
                                                   `}
@@ -60,7 +60,7 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                                 {A}
                                             </p>
                                     </div>
-                                       <button className="self-start p-1 rounded-full text-[#03045e]">
+                                       <button className="self-start p-1 rounded-full">
                                          <HiChevronDown className={`size-5 shrink-0 transition-all`}/>
                                        </button>
                                      

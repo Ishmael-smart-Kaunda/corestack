@@ -18,101 +18,29 @@ export default function FAQ(){
 
                 
                    return(
-                         <section className="
-                                     w-full 
-                                     max-w-[1180px] 
-                                     my-24
-                                     mx-auto
-                                     px-6
-                                     md:px-0
-                                     ">
+                         <section 
+                          className="
+                              w-full 
+                              
+                              my-24
+                              
+                              px-6
+                           ">
+                           <div className="w-full max-w-[1180px] mx-auto">
                               <header className="text-center pb-4">
-                                    <h2 className="text-3xl md:text-4xl font-bold my-3">
-                                       
+                                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold my-3 ">
+                                      Your Questions Answered
                                     </h2>
-                                    <p className="text-lg text-black/80">
+
+                                    <div className="h-[3px] w-1/10 bg-yellow-600 mx-auto my-6"/>
+
+                                    <p className="text-[1.3rem] font-light text-black">
+                                      Our team had to take time to respond to your frequent queiries.
                                       
                                     </p>
                              </header> 
 
-                             <div className="grid md:grid-cols-2 gap-16 w-full py-5 text-[18px]">
-                                <aside 
-                                   className="
-                                       w-full 
-                                       
-                                       md:sticky 
-                                       md:top-30 
-                                       self-start
-                                       h-fit 
-                                       
-                                       rounded-md
-                                       py-3
-                                       
-                                       "
-                                 >
-                                 
-                                 <h2 
-                                 className="
-                                    text-2xl 
-                                    md:text-3xl 
-                                    font-bold 
-                                    my-3 
-                                    
-                                    leading-tight
-                                    my-3
-                                    ">
-                                    Frequently 
-                                    <br/>
-                                    Asked Questions
-                                 </h2>
-                                 <p 
-                                 className="
-                                  
-                                    "
-                                 >
-                                    Some of the most common questions that we receive
-                                    from our clients. 
-                                    
-                                 </p>
-                                 <div 
-                                    className="
-                                        w-full
-                                        hidden 
-                                        md:block 
-                                        mt-16
-                                        h-fit
-                                        space-y-4
-                                        border
-                                        border-dotted
-                                        border-[#03045e]/30 
-                                        shad ow-sm
-                                        shad ow-[#03045e]/10
-                                        rounded-
-                                        md:rounded-lg
-                                        p-3"
-                                 >
-                                 <h3 className="text-lg md:text-xl font-semibold">
-                                    Still have questions?
-                                    <br/>
-                                 </h3>
-                                 <p className="">
-                                       Our support team is always ready to respond to your 
-                                       inquiries.
-                                 </p>
-                                 <Link to="/contact" 
-                                       className="
-                                          text-[#03045e] 
-                                          font-semibold
-                                          hover:underline
-                                          ">
-                                    Contact Us
-                                 </Link>
-
-
-                                 </div>
-
-                                </aside>
-                                <aside className="w-full">
+                             <div className="w-full my-16">
                                     {
                                        questions.map((item)=>(
                                           <Question 
@@ -123,47 +51,8 @@ export default function FAQ(){
                                           />
                                           ))              
                                     }
-                              </aside>
-                              
-
                              </div>
-
-                             {/* faq cta for mobile devices */}
-                             <div 
-                                    className="
-                                        w-full
-                                        md:hidden 
-                                        mt-6
-                                        h-fit
-                                        space-y-4
-                                        border
-                                        border-dotted
-                                        border-[#03045e]/30
-                                        rounded-lg
-                                        p-3
-                                        py-6"
-                                 >
-                                 <h3 className="text-xl font-semibold">
-                                    Still have questions?
-                                    <br/>
-                                 </h3>
-                                 <p className="text-lg">
-                                       Our support team is always ready to respond to your 
-                                       inquiries.
-                                 </p>
-                                 <Link to="/contact" 
-                                       className="
-                                          text-[#03045e] 
-                                          font-semibold
-                                          hover:underline
-                                          ">
-                                    Contact Us
-                                 </Link>
-
-
-                                 </div>
-
-
+                           </div>
                          </section>
                    )
 }

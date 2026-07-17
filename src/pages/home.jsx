@@ -13,7 +13,7 @@ const Home = () => {
           <>
             <Hero />
             <Challenges />
-            <Process />
+            
             
             <Services/>
 
