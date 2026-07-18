@@ -12,8 +12,10 @@ const Challengescard = ({id, icon, title, description}) =>{
                     
                        shado
                       border 
+                      border
                       border-blue-600/20 
-                      bg-white gray-50 blue-50 radial from-white -100 via-gray-50 to-blue-900/10
+                      bg-blue-600/10 
+                      radial from-white -100 via-gray-50 to-blue-900/10
                       p-4 
                       w-fit
                       py -2
@@ -23,7 +25,7 @@ const Challengescard = ({id, icon, title, description}) =>{
                       hover:scale-  105 
                       transition-all 
                       duration-1000
-                      cursor-pointer
+                      
                       "
                       
                   >
