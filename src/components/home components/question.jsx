@@ -29,15 +29,15 @@ export default function Question({id, Q, A, handleExpansion, isExpanded}){
                                         my-4 
                                         items-center  
                                         border 
-                                        border-blue-600/20 
-                                        rounded-sm 
+                                        border-blue-600/5 
+                                        rounded-3xl sm 
                                         
                                         
                                         
                                         p-3
                                         `}>
-                                    <div className={`${id===isExpanded ? 'h-65 md:h-40 lg:h-30 ' : 'h-14 lg:h-10'} w-full tracking-wide  transition-all duration-500 overflow-hidden space-y-4`}>
-                                            <h3 className={` text-[1.2rem]`}>
+                                    <div className={`${id===isExpanded ? 'h-65 md:h-40 lg:h-30 ' : 'h-14 lg:h-8'} w-full tracking-wide  transition-all duration-500 overflow-hidden space-y-4`}>
+                                            <h3 className={` text-[1.2rem] text-black/70`}>
                                              {Q}
                                              </h3>
                                             <p className={

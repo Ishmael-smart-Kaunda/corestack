@@ -29,7 +29,7 @@ export default [
     "id": 2,
     "icon": LuWaypoints,
     "title": "Digital Transformation Consultancy",
-    "description": "",
+    "description": "Evaluate your business processes to identify digital improvements that simplify operations and increase efficiency.",
     "deliverables": [
       "Corporate Websites",
       "Customer Portals",
