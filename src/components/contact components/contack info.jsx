@@ -23,7 +23,8 @@ const ContactInfor = () =>{
                       py-16
                       px-6
                       
-                      bg-gray-200/50
+                      bg- gray-200/50
+                      bg-[#f8fafc] 
                       border-t
                       border-2
                       border-white
@@ -40,7 +41,7 @@ const ContactInfor = () =>{
                           md:grid-cols-2
                           lg:grid-cols-3
                           gap-6
-                          text-[#393E46]/90
+                          text-[#393E46]
 
                      ">
                       {/*phone */}
@@ -62,7 +63,7 @@ const ContactInfor = () =>{
                         <a href="tel:+265887914433" className="font-extrabold text-lg">
                              +265 887 914 433
                         </a>
-                        <p className="text-sm font-semibold my-2">Speak With Us</p>
+                        <p className="text-sm text-yellow-600 my-2">Speak With Us</p>
 
                       </div>
                       {/*WhatsApp */}
@@ -86,7 +87,7 @@ const ContactInfor = () =>{
                          ">
                              +265 981 457 286
                         </a>
-                        <p className="text-sm font-semibold my-2">
+                        <p className="text-sm  text-yellow-600 my-2">
                             Start A Conversation
                         </p>
 
@@ -112,7 +113,7 @@ const ContactInfor = () =>{
                          ">
                              sales.corestack.com
                         </a>
-                        <p className="text-sm font-semibold my-2">
+                        <p className="text-sm text-yellow-600 my-2">
                             Send Your Inquiry
                         </p>
 

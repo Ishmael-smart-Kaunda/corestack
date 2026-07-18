@@ -6,117 +6,92 @@ const ContactForm = () =>{
            return(
               <section className="w-full  px-6 md:px-0">
                   
-                  <header className="w-full md:w-8/10 mx-auto text-center mb-8 text-[#393E46]">
-                      <h2 className="font-semibold text-xl  tracking-[0.5px]">
+                  <header className="w-full  mb-16 text-[#393E46]">
+                      <h2 className="uppercas text-[1.3rem] e font-semibold">
                           Send us a message
                       </h2>
                       <p className="  text-md my-3">
-                          Share your goals or challenges with us. 
-                          We'll help you find the right path forward. 
+                          Tell us about your business,
+                          project, or idea.
                       </p>
                   </header>
-                  <form action="" className="space-y-6 text-[#393E46]/80 font-semibold">
-                     <fieldset className="flex flex-col md:flex-row gap-3 justify-between">
-                        <label htmlFor="name" className="md:w-1/2 flex flex-col gap-3 font-semibold">
-                            Name
+                  <form action="" className="space-y-6 ">
+                     <fieldset className="flex flex- col md:fl ex-row gap-3 justify-between">
+                        
                             <input 
                                type="text"
                                name="name" 
                                className="
-                                   p-2 
+                                   w-1/2
+                                   pb-4 
                                    outline-none 
-                                   rounded-md 
-                                   border 
+                                    
+                                   border-b 
                                    border-[#393E46]/20
                                    text-[15px]
-                                   placeholder:text-[#393E46]/80"
-                               placeholder="Your Full Name"
+                                   "
+                                   placeholder="Full name"
                                
                             />
-                        </label>
-                        <label htmlFor="email" className="md:w-1/2 flex flex-col gap-3 font-semibold">
-                            Email
+                        
+                        
                             <input 
                                type="text" 
-                               name="email"
+                               name="phone"
                                className="
-                                  p-2 
-                                  outline-none
-                                  rounded-md  
-                                  
-                                  border 
-                                  border-[#393E46]/30
-                                  text-[15px]
-                                  placeholder:text-[#393E46]/80
-                                  "
-                               placeholder="Your Email"
-                               
-                            />
-                        </label>
-                     </fieldset>
-
-                     <fieldset className="flex flex-col md:flex-row gap-3 justify-between">
-                        <label htmlFor="phone" className="w-full md:w-1/2 flex flex-col gap-3 font-semibold">
-                            Phone
-                            <input 
-                               type="text" 
-                               name="subject"
-                               className="
-                                   p-2
+                                   w-1/2
+                                   pb-4
                                    outline-none 
-                                   rounded-md 
-                                   border 
+                                    
+                                   border-b 
                                    border-[#393E46]/20
                                    text-[15px]
-                                   placeholder:text-[#393E46]/80"
-                               placeholder="Your Phone"
+                                   "
+                               placeholder="Phone"
                                
                             />
-                        </label>
-                        <label htmlFor="subject" className="w-full md:w-1/2 flex flex-col gap-3 font-semibold">
-                            Subject
-                            <input 
-                               type="text" 
-                               name="subject"
-                               className="
-                                   p-2
-                                   outline-none 
-                                   rounded-md 
-                                   border 
-                                   border-[#393E46]/20
-                                   text-[15px]
-                                   placeholder:text-[#393E46]/80"
-                               placeholder="The subject"
-                               
-                            />
-                        </label>
-                      </fieldset>
-                        <label htmlFor="message" className="w-full flex flex-col gap-3 font-semibold">
-                            A short message
-                            <textarea 
-                               type="text"
-                               name="message"
-                               rows={2} 
-                               className="
-                                   p-2 
-                                   outline-none 
-                                   rounded-md 
-                                   border 
-                                   border-[#393E46]/20
-                                   text-[15px]
-                                   placeholder:text-[#393E46]/80"
-                               placeholder="Briefly describe your issue..."
-                               
-                            />
-                        </label>
+                      
+                       
+                     </fieldset> 
+                     <input 
+                        type="text" 
+                        name="email"
+                        className="
+                            w-full
+                            pb-4
+                            outline-none
+                            border-b 
+                            border-[#393E46]/30
+                            text-[15px]
+                            placeholder:text-[#393E46]/80
+                            "
+                        placeholder="Email"
+                        
+                      />
+                      <textarea 
+                        type="text"
+                        name="message"
+                         
+                        className="
+                            w-full
+                            pb 
+                            outline-none  
+                            border-b 
+                            border-[#393E46]/20
+                            text-[15px]
+                            placeholder:text-[#393E46]/80"
+                        placeholder="Briefly describe your message..."
+                        
+                      />
+                       
                         <fieldset className="flex gap-4 justify-between">
                             <button 
                                 type="submit" 
                                 className="
                                     w-1/2
-                                    rounded-lg 
+                                    rounded-full lg 
                                     md:px-8 
-                                    p-2
+                                    p-4
                                     text-base
                                     font-semibold 
                                     text-white
@@ -125,7 +100,7 @@ const ContactForm = () =>{
                                     bg-[#03045e]
                                     mt-4
                             ">
-                                Send Your Message
+                                Submit
                             </button>
                             <Link  
                               to='/'                              
@@ -134,9 +109,10 @@ const ContactForm = () =>{
                                     justify-center
                                     items-center
                                     w-1/2
-                                    rounded-lg 
+                                    rounded-full lg 
                                     md:px-8 
-                                    p-2
+                                    p-4
+
                                     text-base
                                     font-semibold 
                                     text-[#03045e]
@@ -148,7 +124,7 @@ const ContactForm = () =>{
                                     bg-white
                                     mt-4
                             ">
-                                Back To Home
+                                Back
                             </Link>
                         </fieldset>
                   </form>

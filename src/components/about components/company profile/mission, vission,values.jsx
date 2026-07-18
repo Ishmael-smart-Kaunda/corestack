@@ -18,6 +18,7 @@ const OurDirection = () =>{
                 className="
                   w-full
                   bg-[#f8fafc] 
+                  bg- gray-100
                   py-8 
                   lg:py-16
                   px-6

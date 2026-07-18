@@ -11,7 +11,8 @@ const AboutUs = () =>{
                   px-6
                   
                   text-[#1e293b]
-                  bg-gray-100
+                  bg-[#f8fafc] 
+                  bg- gray-100
                    
             ">
                <div 

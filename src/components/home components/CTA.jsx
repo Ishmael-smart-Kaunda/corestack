@@ -1,166 +1,71 @@
-import { HiArrowRight, HiOutlineArrowCircleRight } from "react-icons/hi";
-import { RiArrowRightCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import { LuArrowRight } from "react-icons/lu";
 
+const CTA = () =>{
+      return(
+            <section className="w-full max-w-[1180px] mx-auto px-6">
+                <div className="relative border border-black/20 bg-[#222831] overflow-hidden text-white w-full max-w-[1180px] mx-auto my-34 text-center py-6 px-2 md:p-12 rounded-4xl ">
+                    {/*dotted svg bg */}
+                    <svg  width="full" height="full" xmlns="http://www.w3.org/2000/svg"
+                            className="absolute inset-0 mix-blend-overlay">
+                            <defs>
+                                <pattern id="patt1" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                                    <circle cx="1" cy="1" r="1" fill="" className="bg-yellow-600"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" x="0" y="0" fill="url(#patt1)" />
+                    </svg>
 
-const CTA= ()=> {
-  return (
-    <section className="g-gray-900 p-6 hidden">
-      <div className="
-              relative 
-              grid 
-              grid-cols-1
-              lg:grid-cols-3 
-              gap-4 
-              max-w-[1180px]
-              mx-auto 
-              bg- [#222831] 
-              rounded-md
-              md:rounded-xl 
-              overflow-hidden 
-              p-4 
-              md:p-8 
-              border
-              ">
-        
-        <div className="lg:col-span-2  space-y-8">
-            <h2 className="mt-6 text-3xl lg:text-4xl font-extrabold leading-tight md:text-5xl">
-              Ready To Moderenize Your Operations?
-            </h2>
-
-            <p className="mt-6 text-lg">
-              Whether you need an online store, process automation, or a custom
-              business platform, we help organisations identify opportunities
-              and implement technology that delivers measurable results.
-            </p>
-
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              
-
-              <a
-                href="/solutions"
-                className="inline-flex items-center justify-center rounded-lg border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
-              >
-                Explore Our Solutions
-              </a>
-            </div>
-          </div>
-          {/**CTA FORM */}
-          <div className="w-full h-full border border-white/20 rounded-md p-4">
-              <span className="text-white mx-auto block text-center font-bold text-lg mb-4">
-                  Schedule a Session
-              </span>
-             <form action="" className="text-white/50">
-                <label htmlFor="name" className="flex flex-col gap-3">
-                  Name
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="
-                       bg-gray-300/10 
-                       placeholder:text-gray-400 
-                       focus:ring-2 
-                       focus:ring-blue-900/40  
-                       focus:outline-none
-                       p-2
-                       rounded-sm" 
-                       placeholder="Your name
-                       " 
-                  />
-                </label>
-                <label htmlFor="email" className="flex flex-col gap-3">
-                  Email
-                  <input 
-                      type="email" 
-                      id="email" 
-                      className="
-                        bg-gray-300/10 
-                        placeholder:text-gray-400 
-                        focus:ring-2 
-                        focus:ring-blue-900/40 
-                        focus:outline-none
-                        p-2
-                        rounded-sm" 
-                        placeholder="Your email" 
-                        />
-                </label>
-                <fieldset className="flex gap-2 w-full">
-                    <label htmlFor="date" className="w-[42%] overflow-hidden md:w-1/2 flex flex-col gap-3">
-                      Date
-                      <input 
-                          type="date"
-                          id="date"
-                          className="
-                            bg-gray-300/10 
-                            placeholder:text-gray-400 
-                            focus:ring-2 
-                            focus:ring-blue-900/40 
-                            focus:outline-none
-                            p-2
-                            rounded-md"
-                      />
-                    </label>    
-                        <label htmlFor="time" className=" flex flex-col gap-3">
-                          Time
-                          <input  
-                            type="time"
-                            id="time"
-                              className=" 
-                              w-[81%] 
-                              md:w-full  
-                              bg-gray-300/10 
-                              placeholder:text-gray-400 
-                              focus:ring-2    
-                              focus:ring-blue-900/40
-                              focus:outline-none
-                              p-2
-                              rounded-sm"   
-                      />
-                    </label>
-                </fieldset>
-
-                <label htmlFor="message" className="flex flex-col gap-3">
-                 Message
-                  <textarea 
-                     id="message" 
-                     rows={2} 
-                    
-                     className="
-                       bg-gray-300/10 
-                       placeholder:text-gray-400 
-                       focus:ring-2 
-                       focus:ring-blue-900/40 
-                       focus:outline-none
-                       p-2
-                       rounded-sm" 
-                       placeholder="Your message"
-                  />
- 
-                </label>
-                <button 
-                   
-                   type="submit" 
-                   className="
-                      w-full
-                      rounded-lg 
-                      px-6 
-                      py-3
-                      text-base
-                      text-white 
-                      font-semibold 
-                      text-blue-800 
-                      transition 
-                      bg-gray-300/50
-                      mt-4">
-                  
-                  Send
-                  
-                </button>
-             </form>
-
-          </div>
-      </div>
-    </section>
-  );
+                    {/*content */}
+                    <div className="relative space-y-8">
+                
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide">
+                            Still Have Questions?
+                        </h3>
+                        
+                
+                        <p className="max-w-3xl mx-auto mt-5 text-[1.3rem] font-light leading-relaxed">
+                            We are ready to answer your questions and help you understand 
+                            what might work best for your business.
+                        </p>
+                
+                        <div className="mt-8 flex justify-center">
+                        <Link
+                            to="/contact"
+                            className="
+                            group
+                            inline-flex
+                            items-center
+                            gap-8
+                            px-7
+                            py-3.5
+                            rounded-full
+                            bg-primary
+                            
+                            border
+                            bord er-2
+                            border-blue-600/20
+                            
+                            transition-all
+                            duration-300
+                            hover:shadow-lg
+                            hover:scale-105
+                            text-white
+                            bg-[#03045e] 
+                            font-bold
+                            "
+                        >
+                            Let's Discuss
+                        <span className="p-2 bg-white text-[#03045e] rounded-full group-hover:translate-x-3 transition-transform duration-1000 ">
+                                <LuArrowRight className="" />
+                        </span>
+                            
+                        </Link>
+                    </div>
+                    </div>
+                </div>
+            </section>
+      )
 }
 
 export default CTA;

@@ -13,15 +13,11 @@ const Home = () => {
           <>
             <Hero />
             <Challenges />
-            
-            
             <Services/>
-
             <Promise />
-            
             <FeaturedSolutions/>
-            <CTA/>
             <FQA/>
+            <CTA/>
 
           </>
   )

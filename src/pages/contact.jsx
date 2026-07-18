@@ -14,7 +14,7 @@ const Contact = () => {
                
                <ContactInfor/>
                <Container/>
-               <Socials/>
+              
             </>
 
     )

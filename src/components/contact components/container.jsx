@@ -1,6 +1,6 @@
 import ContactForm from "./form";
 import ContactInfor from "./contack info";
-
+import logo from '../../assets/logo/favicon.png'
 const Container = () =>{
         return(
                <section 
@@ -14,42 +14,28 @@ const Container = () =>{
                     
                     rounded-3xl
                     min-h-100
-                    my-16
+                    my-8
                     "
                 >
                 <aside 
                     className="
                        hidden
+                     
                        md:block
                        md:sticky
                        md:top-10
                        w-full 
                        rounded-3xl 
                        overflow-hidden 
-                       py-16 
-                       h-fit
-                       
+                       bg-gray-50 [#222831]/50 black yellow-800
+                       h-full
+                           
                  ">
-                    <figure 
-                     className="
-                        w-full
-                        bg-white/80 
-                        border-l
-                        border-black/10
-                        overflow-hidden
-                     ">
-                     <img 
-                        src="https://i.pinimg.com/1200x/7a/c9/25/7ac92576ff5251c14241a34a73f8a707.jpg" 
-                        alt="Contact Us" 
-                        className="
-                        object-cover 
-                        w-full 
-                        h-full 
-                        opacity-30
-                        " 
-                      />
-                    </figure>
-
+                     <div className=" w-full h-full flex flex-col items-center justify-center">
+                        <h1 className="m-auto w-1/2 text-[3rem] text-center text-[#222831] font-extrabold">
+                             We'll be in touch
+                        </h1>
+                     </div>
                     </aside>
                     <ContactForm/>
                 </section>
