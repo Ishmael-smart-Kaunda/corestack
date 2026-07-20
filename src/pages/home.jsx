@@ -5,7 +5,7 @@ import FeaturedSolutions from "../components/home components/featured solutions/
 import CTA from "../components/home components/CTA";
 import FQA from "../components/home components/FAQ"
 import Challenges from "../components/home components/Challenges";
-import Process from "../components/home components/Process";
+import Process from "../components/approach components/Process";
 import Promise from "../components/home components/Promise";
 
 const Home = () => {

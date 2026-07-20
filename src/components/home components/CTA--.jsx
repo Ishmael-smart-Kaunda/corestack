@@ -13,7 +13,7 @@ const CTA= ()=> {
               gap-4 
               max-w-[1180px]
               mx-auto 
-              bg- [#222831] 
+              bg-[#222831] 
               rounded-md
               md:rounded-xl 
               overflow-hidden 

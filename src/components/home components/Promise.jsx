@@ -76,7 +76,7 @@ const Promise = () => {
           className="
             inline-flex
             items-center
-            gap-2
+            gap-4
             mt-10
             px-7
             py-4
@@ -94,7 +94,7 @@ const Promise = () => {
           "
         >
           Let's Build Something Together
-          <span className="p-2 bg-[#03045e] rounded-full group-hover:translate-x-1 transition-transform duration-300 ">
+          <span className="p-2 bg-[#03045e] rounded-full group-hover:translate-x-3 transition-transform duration-1000 ">
                 <LuArrowRight className="text-white " />
            </span>
          
